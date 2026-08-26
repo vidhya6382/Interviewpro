@@ -1,2 +1,2 @@
 [tool.vercel]
-entrypoint = "backend.wsgi:application"
+entrypoint = "backend.backend.wsgi:application"
