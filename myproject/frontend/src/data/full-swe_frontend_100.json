@@ -1,0 +1,602 @@
+[
+  {
+    "title": "Two Sum + Design URL Shortener + OS",
+    "diff": "Medium",
+    "topic": "Mixed",
+    "company": "Complete SWE"
+  },
+  {
+    "title": "Complete Interview - Amazon SDE",
+    "diff": "Hard",
+    "topic": "Full Mock",
+    "company": "Amazon"
+  },
+  {
+    "title": "Complete Interview - TCS Digital",
+    "diff": "Medium",
+    "topic": "Full Mock",
+    "company": "TCS Digital"
+  },
+  {
+    "title": "Project Discussion - Resume",
+    "diff": "Easy",
+    "topic": "Projects",
+    "company": "All Companies"
+  },
+  {
+    "title": "SQL + DSA + LLD Combo",
+    "diff": "Medium",
+    "topic": "Full Stack",
+    "company": "Product"
+  },
+  {
+    "title": "Graph + System Design - Real Set",
+    "diff": "Hard",
+    "topic": "Mixed",
+    "company": "FAANG"
+  },
+  {
+    "title": "Core CS Rapid Fire - 30 Qs",
+    "diff": "Medium",
+    "topic": "OS/DBMS/CN",
+    "company": "Service"
+  },
+  {
+    "title": "Behavioral - Tell me about yourself",
+    "diff": "Easy",
+    "topic": "HR",
+    "company": "All"
+  },
+  {
+    "title": "Puzzle + DSA - Interview Set",
+    "diff": "Medium",
+    "topic": "Mixed",
+    "company": "Google"
+  },
+  {
+    "title": "End to End SWE Simulation",
+    "diff": "Hard",
+    "topic": "Full",
+    "company": "SWE"
+  },
+  {
+    "title": "Reverse Linked List",
+    "diff": "Easy",
+    "topic": "LinkedList",
+    "company": "TCS, Infosys"
+  },
+  {
+    "title": "Merge Intervals",
+    "diff": "Medium",
+    "topic": "Array",
+    "company": "Amazon"
+  },
+  {
+    "title": "Design TinyURL - LLD Code",
+    "diff": "Medium",
+    "topic": "LLD",
+    "company": "Product"
+  },
+  {
+    "title": "OS - Scheduling Algorithms",
+    "diff": "Easy",
+    "topic": "OS",
+    "company": "Wipro"
+  },
+  {
+    "title": "DBMS - Second Highest Salary",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "TCS"
+  },
+  {
+    "title": "Reverse Linked List 16",
+    "diff": "Easy",
+    "topic": "LinkedList",
+    "company": "TCS, Infosys"
+  },
+  {
+    "title": "Merge Intervals 17",
+    "diff": "Medium",
+    "topic": "Array",
+    "company": "Amazon"
+  },
+  {
+    "title": "Design TinyURL - LLD Code 18",
+    "diff": "Medium",
+    "topic": "LLD",
+    "company": "Product"
+  },
+  {
+    "title": "OS - Scheduling Algorithms 19",
+    "diff": "Easy",
+    "topic": "OS",
+    "company": "Wipro"
+  },
+  {
+    "title": "DBMS - Second Highest Salary 20",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "TCS"
+  },
+  {
+    "title": "Reverse Linked List 21",
+    "diff": "Easy",
+    "topic": "LinkedList",
+    "company": "TCS, Infosys"
+  },
+  {
+    "title": "Merge Intervals 22",
+    "diff": "Medium",
+    "topic": "Array",
+    "company": "Amazon"
+  },
+  {
+    "title": "Design TinyURL - LLD Code 23",
+    "diff": "Medium",
+    "topic": "LLD",
+    "company": "Product"
+  },
+  {
+    "title": "OS - Scheduling Algorithms 24",
+    "diff": "Easy",
+    "topic": "OS",
+    "company": "Wipro"
+  },
+  {
+    "title": "DBMS - Second Highest Salary 25",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "TCS"
+  },
+  {
+    "title": "Reverse Linked List 26",
+    "diff": "Easy",
+    "topic": "LinkedList",
+    "company": "TCS, Infosys"
+  },
+  {
+    "title": "Merge Intervals 27",
+    "diff": "Medium",
+    "topic": "Array",
+    "company": "Amazon"
+  },
+  {
+    "title": "Design TinyURL - LLD Code 28",
+    "diff": "Medium",
+    "topic": "LLD",
+    "company": "Product"
+  },
+  {
+    "title": "OS - Scheduling Algorithms 29",
+    "diff": "Easy",
+    "topic": "OS",
+    "company": "Wipro"
+  },
+  {
+    "title": "DBMS - Second Highest Salary 30",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "TCS"
+  },
+  {
+    "title": "Reverse Linked List 31",
+    "diff": "Easy",
+    "topic": "LinkedList",
+    "company": "TCS, Infosys"
+  },
+  {
+    "title": "Merge Intervals 32",
+    "diff": "Medium",
+    "topic": "Array",
+    "company": "Amazon"
+  },
+  {
+    "title": "Design TinyURL - LLD Code 33",
+    "diff": "Medium",
+    "topic": "LLD",
+    "company": "Product"
+  },
+  {
+    "title": "OS - Scheduling Algorithms 34",
+    "diff": "Easy",
+    "topic": "OS",
+    "company": "Wipro"
+  },
+  {
+    "title": "DBMS - Second Highest Salary 35",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "TCS"
+  },
+  {
+    "title": "Reverse Linked List 36",
+    "diff": "Easy",
+    "topic": "LinkedList",
+    "company": "TCS, Infosys"
+  },
+  {
+    "title": "Merge Intervals 37",
+    "diff": "Medium",
+    "topic": "Array",
+    "company": "Amazon"
+  },
+  {
+    "title": "Design TinyURL - LLD Code 38",
+    "diff": "Medium",
+    "topic": "LLD",
+    "company": "Product"
+  },
+  {
+    "title": "OS - Scheduling Algorithms 39",
+    "diff": "Easy",
+    "topic": "OS",
+    "company": "Wipro"
+  },
+  {
+    "title": "DBMS - Second Highest Salary 40",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "TCS"
+  },
+  {
+    "title": "Reverse Linked List 41",
+    "diff": "Easy",
+    "topic": "LinkedList",
+    "company": "TCS, Infosys"
+  },
+  {
+    "title": "Merge Intervals 42",
+    "diff": "Medium",
+    "topic": "Array",
+    "company": "Amazon"
+  },
+  {
+    "title": "Design TinyURL - LLD Code 43",
+    "diff": "Medium",
+    "topic": "LLD",
+    "company": "Product"
+  },
+  {
+    "title": "OS - Scheduling Algorithms 44",
+    "diff": "Easy",
+    "topic": "OS",
+    "company": "Wipro"
+  },
+  {
+    "title": "DBMS - Second Highest Salary 45",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "TCS"
+  },
+  {
+    "title": "Reverse Linked List 46",
+    "diff": "Easy",
+    "topic": "LinkedList",
+    "company": "TCS, Infosys"
+  },
+  {
+    "title": "Merge Intervals 47",
+    "diff": "Medium",
+    "topic": "Array",
+    "company": "Amazon"
+  },
+  {
+    "title": "Design TinyURL - LLD Code 48",
+    "diff": "Medium",
+    "topic": "LLD",
+    "company": "Product"
+  },
+  {
+    "title": "OS - Scheduling Algorithms 49",
+    "diff": "Easy",
+    "topic": "OS",
+    "company": "Wipro"
+  },
+  {
+    "title": "DBMS - Second Highest Salary 50",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "TCS"
+  },
+  {
+    "title": "Reverse Linked List 51",
+    "diff": "Easy",
+    "topic": "LinkedList",
+    "company": "TCS, Infosys"
+  },
+  {
+    "title": "Merge Intervals 52",
+    "diff": "Medium",
+    "topic": "Array",
+    "company": "Amazon"
+  },
+  {
+    "title": "Design TinyURL - LLD Code 53",
+    "diff": "Medium",
+    "topic": "LLD",
+    "company": "Product"
+  },
+  {
+    "title": "OS - Scheduling Algorithms 54",
+    "diff": "Easy",
+    "topic": "OS",
+    "company": "Wipro"
+  },
+  {
+    "title": "DBMS - Second Highest Salary 55",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "TCS"
+  },
+  {
+    "title": "Reverse Linked List 56",
+    "diff": "Easy",
+    "topic": "LinkedList",
+    "company": "TCS, Infosys"
+  },
+  {
+    "title": "Merge Intervals 57",
+    "diff": "Medium",
+    "topic": "Array",
+    "company": "Amazon"
+  },
+  {
+    "title": "Design TinyURL - LLD Code 58",
+    "diff": "Medium",
+    "topic": "LLD",
+    "company": "Product"
+  },
+  {
+    "title": "OS - Scheduling Algorithms 59",
+    "diff": "Easy",
+    "topic": "OS",
+    "company": "Wipro"
+  },
+  {
+    "title": "DBMS - Second Highest Salary 60",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "TCS"
+  },
+  {
+    "title": "Reverse Linked List 61",
+    "diff": "Easy",
+    "topic": "LinkedList",
+    "company": "TCS, Infosys"
+  },
+  {
+    "title": "Merge Intervals 62",
+    "diff": "Medium",
+    "topic": "Array",
+    "company": "Amazon"
+  },
+  {
+    "title": "Design TinyURL - LLD Code 63",
+    "diff": "Medium",
+    "topic": "LLD",
+    "company": "Product"
+  },
+  {
+    "title": "OS - Scheduling Algorithms 64",
+    "diff": "Easy",
+    "topic": "OS",
+    "company": "Wipro"
+  },
+  {
+    "title": "DBMS - Second Highest Salary 65",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "TCS"
+  },
+  {
+    "title": "Reverse Linked List 66",
+    "diff": "Easy",
+    "topic": "LinkedList",
+    "company": "TCS, Infosys"
+  },
+  {
+    "title": "Merge Intervals 67",
+    "diff": "Medium",
+    "topic": "Array",
+    "company": "Amazon"
+  },
+  {
+    "title": "Design TinyURL - LLD Code 68",
+    "diff": "Medium",
+    "topic": "LLD",
+    "company": "Product"
+  },
+  {
+    "title": "OS - Scheduling Algorithms 69",
+    "diff": "Easy",
+    "topic": "OS",
+    "company": "Wipro"
+  },
+  {
+    "title": "DBMS - Second Highest Salary 70",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "TCS"
+  },
+  {
+    "title": "Reverse Linked List 71",
+    "diff": "Easy",
+    "topic": "LinkedList",
+    "company": "TCS, Infosys"
+  },
+  {
+    "title": "Merge Intervals 72",
+    "diff": "Medium",
+    "topic": "Array",
+    "company": "Amazon"
+  },
+  {
+    "title": "Design TinyURL - LLD Code 73",
+    "diff": "Medium",
+    "topic": "LLD",
+    "company": "Product"
+  },
+  {
+    "title": "OS - Scheduling Algorithms 74",
+    "diff": "Easy",
+    "topic": "OS",
+    "company": "Wipro"
+  },
+  {
+    "title": "DBMS - Second Highest Salary 75",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "TCS"
+  },
+  {
+    "title": "Reverse Linked List 76",
+    "diff": "Easy",
+    "topic": "LinkedList",
+    "company": "TCS, Infosys"
+  },
+  {
+    "title": "Merge Intervals 77",
+    "diff": "Medium",
+    "topic": "Array",
+    "company": "Amazon"
+  },
+  {
+    "title": "Design TinyURL - LLD Code 78",
+    "diff": "Medium",
+    "topic": "LLD",
+    "company": "Product"
+  },
+  {
+    "title": "OS - Scheduling Algorithms 79",
+    "diff": "Easy",
+    "topic": "OS",
+    "company": "Wipro"
+  },
+  {
+    "title": "DBMS - Second Highest Salary 80",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "TCS"
+  },
+  {
+    "title": "Reverse Linked List 81",
+    "diff": "Easy",
+    "topic": "LinkedList",
+    "company": "TCS, Infosys"
+  },
+  {
+    "title": "Merge Intervals 82",
+    "diff": "Medium",
+    "topic": "Array",
+    "company": "Amazon"
+  },
+  {
+    "title": "Design TinyURL - LLD Code 83",
+    "diff": "Medium",
+    "topic": "LLD",
+    "company": "Product"
+  },
+  {
+    "title": "OS - Scheduling Algorithms 84",
+    "diff": "Easy",
+    "topic": "OS",
+    "company": "Wipro"
+  },
+  {
+    "title": "DBMS - Second Highest Salary 85",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "TCS"
+  },
+  {
+    "title": "Reverse Linked List 86",
+    "diff": "Easy",
+    "topic": "LinkedList",
+    "company": "TCS, Infosys"
+  },
+  {
+    "title": "Merge Intervals 87",
+    "diff": "Medium",
+    "topic": "Array",
+    "company": "Amazon"
+  },
+  {
+    "title": "Design TinyURL - LLD Code 88",
+    "diff": "Medium",
+    "topic": "LLD",
+    "company": "Product"
+  },
+  {
+    "title": "OS - Scheduling Algorithms 89",
+    "diff": "Easy",
+    "topic": "OS",
+    "company": "Wipro"
+  },
+  {
+    "title": "DBMS - Second Highest Salary 90",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "TCS"
+  },
+  {
+    "title": "Reverse Linked List 91",
+    "diff": "Easy",
+    "topic": "LinkedList",
+    "company": "TCS, Infosys"
+  },
+  {
+    "title": "Merge Intervals 92",
+    "diff": "Medium",
+    "topic": "Array",
+    "company": "Amazon"
+  },
+  {
+    "title": "Design TinyURL - LLD Code 93",
+    "diff": "Medium",
+    "topic": "LLD",
+    "company": "Product"
+  },
+  {
+    "title": "OS - Scheduling Algorithms 94",
+    "diff": "Easy",
+    "topic": "OS",
+    "company": "Wipro"
+  },
+  {
+    "title": "DBMS - Second Highest Salary 95",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "TCS"
+  },
+  {
+    "title": "Reverse Linked List 96",
+    "diff": "Easy",
+    "topic": "LinkedList",
+    "company": "TCS, Infosys"
+  },
+  {
+    "title": "Merge Intervals 97",
+    "diff": "Medium",
+    "topic": "Array",
+    "company": "Amazon"
+  },
+  {
+    "title": "Design TinyURL - LLD Code 98",
+    "diff": "Medium",
+    "topic": "LLD",
+    "company": "Product"
+  },
+  {
+    "title": "OS - Scheduling Algorithms 99",
+    "diff": "Easy",
+    "topic": "OS",
+    "company": "Wipro"
+  },
+  {
+    "title": "DBMS - Second Highest Salary 100",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "TCS"
+  }
+]

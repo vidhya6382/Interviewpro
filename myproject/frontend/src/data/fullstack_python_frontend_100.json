@@ -1,0 +1,602 @@
+[
+  {
+    "title": "Two Sum",
+    "diff": "Easy",
+    "topic": "Array",
+    "company": "Amazon, Google"
+  },
+  {
+    "title": "Valid Parentheses",
+    "diff": "Easy",
+    "topic": "Stack",
+    "company": "Zoho, TCS"
+  },
+  {
+    "title": "Best Time to Buy and Sell Stock",
+    "diff": "Easy",
+    "topic": "Array",
+    "company": "TCS, Infosys"
+  },
+  {
+    "title": "Two Sum II",
+    "diff": "Medium",
+    "topic": "Two Pointers",
+    "company": "Amazon"
+  },
+  {
+    "title": "3Sum",
+    "diff": "Medium",
+    "topic": "Array",
+    "company": "Adobe, Amazon"
+  },
+  {
+    "title": "Group Anagrams",
+    "diff": "Medium",
+    "topic": "String",
+    "company": "Amazon"
+  },
+  {
+    "title": "Maximum Subarray",
+    "diff": "Medium",
+    "topic": "DP",
+    "company": "Infosys"
+  },
+  {
+    "title": "Merge Intervals",
+    "diff": "Medium",
+    "topic": "Array",
+    "company": "Google"
+  },
+  {
+    "title": "Linked List Cycle",
+    "diff": "Easy",
+    "topic": "Linked List",
+    "company": "TCS"
+  },
+  {
+    "title": "Binary Search",
+    "diff": "Easy",
+    "topic": "Binary Search",
+    "company": "Accenture"
+  },
+  {
+    "title": "Longest Substring Without Repeating",
+    "diff": "Medium",
+    "topic": "Sliding Window",
+    "company": "Amazon, Google"
+  },
+  {
+    "title": "Valid Anagram",
+    "diff": "Easy",
+    "topic": "String",
+    "company": "Google"
+  },
+  {
+    "title": "Majority Element",
+    "diff": "Easy",
+    "topic": "Array",
+    "company": "TCS"
+  },
+  {
+    "title": "Move Zeroes",
+    "diff": "Easy",
+    "topic": "Array",
+    "company": "Infosys"
+  },
+  {
+    "title": "Intersection of Two Arrays",
+    "diff": "Easy",
+    "topic": "Array",
+    "company": "Zoho"
+  },
+  {
+    "title": "Django ORM Query",
+    "diff": "Medium",
+    "topic": "Django",
+    "company": "TCS, Zoho"
+  },
+  {
+    "title": "Python Decorators",
+    "diff": "Medium",
+    "topic": "Python",
+    "company": "Infosys"
+  },
+  {
+    "title": "REST API Design",
+    "diff": "Medium",
+    "topic": "DRF",
+    "company": "Amazon"
+  },
+  {
+    "title": "Longest Substring Without Repeating 19",
+    "diff": "Medium",
+    "topic": "Sliding Window",
+    "company": "Amazon, Google"
+  },
+  {
+    "title": "Valid Anagram 20",
+    "diff": "Easy",
+    "topic": "String",
+    "company": "Google"
+  },
+  {
+    "title": "Majority Element 21",
+    "diff": "Easy",
+    "topic": "Array",
+    "company": "TCS"
+  },
+  {
+    "title": "Move Zeroes 22",
+    "diff": "Easy",
+    "topic": "Array",
+    "company": "Infosys"
+  },
+  {
+    "title": "Intersection of Two Arrays 23",
+    "diff": "Easy",
+    "topic": "Array",
+    "company": "Zoho"
+  },
+  {
+    "title": "Django ORM Query 24",
+    "diff": "Medium",
+    "topic": "Django",
+    "company": "TCS, Zoho"
+  },
+  {
+    "title": "Python Decorators 25",
+    "diff": "Medium",
+    "topic": "Python",
+    "company": "Infosys"
+  },
+  {
+    "title": "REST API Design 26",
+    "diff": "Medium",
+    "topic": "DRF",
+    "company": "Amazon"
+  },
+  {
+    "title": "Longest Substring Without Repeating 27",
+    "diff": "Medium",
+    "topic": "Sliding Window",
+    "company": "Amazon, Google"
+  },
+  {
+    "title": "Valid Anagram 28",
+    "diff": "Easy",
+    "topic": "String",
+    "company": "Google"
+  },
+  {
+    "title": "Majority Element 29",
+    "diff": "Easy",
+    "topic": "Array",
+    "company": "TCS"
+  },
+  {
+    "title": "Move Zeroes 30",
+    "diff": "Easy",
+    "topic": "Array",
+    "company": "Infosys"
+  },
+  {
+    "title": "Intersection of Two Arrays 31",
+    "diff": "Easy",
+    "topic": "Array",
+    "company": "Zoho"
+  },
+  {
+    "title": "Django ORM Query 32",
+    "diff": "Medium",
+    "topic": "Django",
+    "company": "TCS, Zoho"
+  },
+  {
+    "title": "Python Decorators 33",
+    "diff": "Medium",
+    "topic": "Python",
+    "company": "Infosys"
+  },
+  {
+    "title": "REST API Design 34",
+    "diff": "Medium",
+    "topic": "DRF",
+    "company": "Amazon"
+  },
+  {
+    "title": "Longest Substring Without Repeating 35",
+    "diff": "Medium",
+    "topic": "Sliding Window",
+    "company": "Amazon, Google"
+  },
+  {
+    "title": "Valid Anagram 36",
+    "diff": "Easy",
+    "topic": "String",
+    "company": "Google"
+  },
+  {
+    "title": "Majority Element 37",
+    "diff": "Easy",
+    "topic": "Array",
+    "company": "TCS"
+  },
+  {
+    "title": "Move Zeroes 38",
+    "diff": "Easy",
+    "topic": "Array",
+    "company": "Infosys"
+  },
+  {
+    "title": "Intersection of Two Arrays 39",
+    "diff": "Easy",
+    "topic": "Array",
+    "company": "Zoho"
+  },
+  {
+    "title": "Django ORM Query 40",
+    "diff": "Medium",
+    "topic": "Django",
+    "company": "TCS, Zoho"
+  },
+  {
+    "title": "Python Decorators 41",
+    "diff": "Medium",
+    "topic": "Python",
+    "company": "Infosys"
+  },
+  {
+    "title": "REST API Design 42",
+    "diff": "Medium",
+    "topic": "DRF",
+    "company": "Amazon"
+  },
+  {
+    "title": "Longest Substring Without Repeating 43",
+    "diff": "Medium",
+    "topic": "Sliding Window",
+    "company": "Amazon, Google"
+  },
+  {
+    "title": "Valid Anagram 44",
+    "diff": "Easy",
+    "topic": "String",
+    "company": "Google"
+  },
+  {
+    "title": "Majority Element 45",
+    "diff": "Easy",
+    "topic": "Array",
+    "company": "TCS"
+  },
+  {
+    "title": "Move Zeroes 46",
+    "diff": "Easy",
+    "topic": "Array",
+    "company": "Infosys"
+  },
+  {
+    "title": "Intersection of Two Arrays 47",
+    "diff": "Easy",
+    "topic": "Array",
+    "company": "Zoho"
+  },
+  {
+    "title": "Django ORM Query 48",
+    "diff": "Medium",
+    "topic": "Django",
+    "company": "TCS, Zoho"
+  },
+  {
+    "title": "Python Decorators 49",
+    "diff": "Medium",
+    "topic": "Python",
+    "company": "Infosys"
+  },
+  {
+    "title": "REST API Design 50",
+    "diff": "Medium",
+    "topic": "DRF",
+    "company": "Amazon"
+  },
+  {
+    "title": "Longest Substring Without Repeating 51",
+    "diff": "Medium",
+    "topic": "Sliding Window",
+    "company": "Amazon, Google"
+  },
+  {
+    "title": "Valid Anagram 52",
+    "diff": "Easy",
+    "topic": "String",
+    "company": "Google"
+  },
+  {
+    "title": "Majority Element 53",
+    "diff": "Easy",
+    "topic": "Array",
+    "company": "TCS"
+  },
+  {
+    "title": "Move Zeroes 54",
+    "diff": "Easy",
+    "topic": "Array",
+    "company": "Infosys"
+  },
+  {
+    "title": "Intersection of Two Arrays 55",
+    "diff": "Easy",
+    "topic": "Array",
+    "company": "Zoho"
+  },
+  {
+    "title": "Django ORM Query 56",
+    "diff": "Medium",
+    "topic": "Django",
+    "company": "TCS, Zoho"
+  },
+  {
+    "title": "Python Decorators 57",
+    "diff": "Medium",
+    "topic": "Python",
+    "company": "Infosys"
+  },
+  {
+    "title": "REST API Design 58",
+    "diff": "Medium",
+    "topic": "DRF",
+    "company": "Amazon"
+  },
+  {
+    "title": "Longest Substring Without Repeating 59",
+    "diff": "Medium",
+    "topic": "Sliding Window",
+    "company": "Amazon, Google"
+  },
+  {
+    "title": "Valid Anagram 60",
+    "diff": "Easy",
+    "topic": "String",
+    "company": "Google"
+  },
+  {
+    "title": "Majority Element 61",
+    "diff": "Easy",
+    "topic": "Array",
+    "company": "TCS"
+  },
+  {
+    "title": "Move Zeroes 62",
+    "diff": "Easy",
+    "topic": "Array",
+    "company": "Infosys"
+  },
+  {
+    "title": "Intersection of Two Arrays 63",
+    "diff": "Easy",
+    "topic": "Array",
+    "company": "Zoho"
+  },
+  {
+    "title": "Django ORM Query 64",
+    "diff": "Medium",
+    "topic": "Django",
+    "company": "TCS, Zoho"
+  },
+  {
+    "title": "Python Decorators 65",
+    "diff": "Medium",
+    "topic": "Python",
+    "company": "Infosys"
+  },
+  {
+    "title": "REST API Design 66",
+    "diff": "Medium",
+    "topic": "DRF",
+    "company": "Amazon"
+  },
+  {
+    "title": "Longest Substring Without Repeating 67",
+    "diff": "Medium",
+    "topic": "Sliding Window",
+    "company": "Amazon, Google"
+  },
+  {
+    "title": "Valid Anagram 68",
+    "diff": "Easy",
+    "topic": "String",
+    "company": "Google"
+  },
+  {
+    "title": "Majority Element 69",
+    "diff": "Easy",
+    "topic": "Array",
+    "company": "TCS"
+  },
+  {
+    "title": "Move Zeroes 70",
+    "diff": "Easy",
+    "topic": "Array",
+    "company": "Infosys"
+  },
+  {
+    "title": "Intersection of Two Arrays 71",
+    "diff": "Easy",
+    "topic": "Array",
+    "company": "Zoho"
+  },
+  {
+    "title": "Django ORM Query 72",
+    "diff": "Medium",
+    "topic": "Django",
+    "company": "TCS, Zoho"
+  },
+  {
+    "title": "Python Decorators 73",
+    "diff": "Medium",
+    "topic": "Python",
+    "company": "Infosys"
+  },
+  {
+    "title": "REST API Design 74",
+    "diff": "Medium",
+    "topic": "DRF",
+    "company": "Amazon"
+  },
+  {
+    "title": "Longest Substring Without Repeating 75",
+    "diff": "Medium",
+    "topic": "Sliding Window",
+    "company": "Amazon, Google"
+  },
+  {
+    "title": "Valid Anagram 76",
+    "diff": "Easy",
+    "topic": "String",
+    "company": "Google"
+  },
+  {
+    "title": "Majority Element 77",
+    "diff": "Easy",
+    "topic": "Array",
+    "company": "TCS"
+  },
+  {
+    "title": "Move Zeroes 78",
+    "diff": "Easy",
+    "topic": "Array",
+    "company": "Infosys"
+  },
+  {
+    "title": "Intersection of Two Arrays 79",
+    "diff": "Easy",
+    "topic": "Array",
+    "company": "Zoho"
+  },
+  {
+    "title": "Django ORM Query 80",
+    "diff": "Medium",
+    "topic": "Django",
+    "company": "TCS, Zoho"
+  },
+  {
+    "title": "Python Decorators 81",
+    "diff": "Medium",
+    "topic": "Python",
+    "company": "Infosys"
+  },
+  {
+    "title": "REST API Design 82",
+    "diff": "Medium",
+    "topic": "DRF",
+    "company": "Amazon"
+  },
+  {
+    "title": "Longest Substring Without Repeating 83",
+    "diff": "Medium",
+    "topic": "Sliding Window",
+    "company": "Amazon, Google"
+  },
+  {
+    "title": "Valid Anagram 84",
+    "diff": "Easy",
+    "topic": "String",
+    "company": "Google"
+  },
+  {
+    "title": "Majority Element 85",
+    "diff": "Easy",
+    "topic": "Array",
+    "company": "TCS"
+  },
+  {
+    "title": "Move Zeroes 86",
+    "diff": "Easy",
+    "topic": "Array",
+    "company": "Infosys"
+  },
+  {
+    "title": "Intersection of Two Arrays 87",
+    "diff": "Easy",
+    "topic": "Array",
+    "company": "Zoho"
+  },
+  {
+    "title": "Django ORM Query 88",
+    "diff": "Medium",
+    "topic": "Django",
+    "company": "TCS, Zoho"
+  },
+  {
+    "title": "Python Decorators 89",
+    "diff": "Medium",
+    "topic": "Python",
+    "company": "Infosys"
+  },
+  {
+    "title": "REST API Design 90",
+    "diff": "Medium",
+    "topic": "DRF",
+    "company": "Amazon"
+  },
+  {
+    "title": "Longest Substring Without Repeating 91",
+    "diff": "Medium",
+    "topic": "Sliding Window",
+    "company": "Amazon, Google"
+  },
+  {
+    "title": "Valid Anagram 92",
+    "diff": "Easy",
+    "topic": "String",
+    "company": "Google"
+  },
+  {
+    "title": "Majority Element 93",
+    "diff": "Easy",
+    "topic": "Array",
+    "company": "TCS"
+  },
+  {
+    "title": "Move Zeroes 94",
+    "diff": "Easy",
+    "topic": "Array",
+    "company": "Infosys"
+  },
+  {
+    "title": "Intersection of Two Arrays 95",
+    "diff": "Easy",
+    "topic": "Array",
+    "company": "Zoho"
+  },
+  {
+    "title": "Django ORM Query 96",
+    "diff": "Medium",
+    "topic": "Django",
+    "company": "TCS, Zoho"
+  },
+  {
+    "title": "Python Decorators 97",
+    "diff": "Medium",
+    "topic": "Python",
+    "company": "Infosys"
+  },
+  {
+    "title": "REST API Design 98",
+    "diff": "Medium",
+    "topic": "DRF",
+    "company": "Amazon"
+  },
+  {
+    "title": "Longest Substring Without Repeating 99",
+    "diff": "Medium",
+    "topic": "Sliding Window",
+    "company": "Amazon, Google"
+  },
+  {
+    "title": "Valid Anagram 100",
+    "diff": "Easy",
+    "topic": "String",
+    "company": "Google"
+  }
+]

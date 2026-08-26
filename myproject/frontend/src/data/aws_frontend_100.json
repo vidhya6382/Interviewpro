@@ -1,0 +1,602 @@
+[
+  {
+    "title": "EC2 vs S3 vs EBS - Difference",
+    "diff": "Easy",
+    "topic": "AWS Core",
+    "company": "TCS, Infosys"
+  },
+  {
+    "title": "Create VPC with Public & Private Subnet",
+    "diff": "Medium",
+    "topic": "VPC",
+    "company": "AWS Interview"
+  },
+  {
+    "title": "IAM Role vs Policy vs User",
+    "diff": "Easy",
+    "topic": "IAM",
+    "company": "All Companies"
+  },
+  {
+    "title": "S3 Versioning & Lifecycle",
+    "diff": "Easy",
+    "topic": "S3",
+    "company": "CTS"
+  },
+  {
+    "title": "ELB Types - ALB vs NLB vs CLB",
+    "diff": "Medium",
+    "topic": "ELB",
+    "company": "Product"
+  },
+  {
+    "title": "RDS Multi-AZ vs Read Replica",
+    "diff": "Medium",
+    "topic": "RDS",
+    "company": "AWS"
+  },
+  {
+    "title": "Lambda Trigger from S3",
+    "diff": "Medium",
+    "topic": "Lambda",
+    "company": "AWS"
+  },
+  {
+    "title": "CloudFormation Template for EC2",
+    "diff": "Hard",
+    "topic": "IaC",
+    "company": "Cloud"
+  },
+  {
+    "title": "Security Group vs NACL",
+    "diff": "Easy",
+    "topic": "Security",
+    "company": "TCS"
+  },
+  {
+    "title": "Auto Scaling Scenario",
+    "diff": "Hard",
+    "topic": "Scaling",
+    "company": "AWS"
+  },
+  {
+    "title": "What is Cloud Computing?",
+    "diff": "Easy",
+    "topic": "Cloud Basics",
+    "company": "TCS"
+  },
+  {
+    "title": "EC2 Instance Types",
+    "diff": "Easy",
+    "topic": "AWS",
+    "company": "Infosys"
+  },
+  {
+    "title": "Docker vs VM",
+    "diff": "Easy",
+    "topic": "Docker",
+    "company": "All"
+  },
+  {
+    "title": "What is Kubernetes?",
+    "diff": "Easy",
+    "topic": "K8s",
+    "company": "DevOps"
+  },
+  {
+    "title": "Jenkins vs GitHub Actions",
+    "diff": "Easy",
+    "topic": "CI/CD",
+    "company": "DevOps"
+  },
+  {
+    "title": "What is Cloud Computing? 16",
+    "diff": "Easy",
+    "topic": "Cloud Basics",
+    "company": "TCS"
+  },
+  {
+    "title": "EC2 Instance Types 17",
+    "diff": "Easy",
+    "topic": "AWS",
+    "company": "Infosys"
+  },
+  {
+    "title": "Docker vs VM 18",
+    "diff": "Easy",
+    "topic": "Docker",
+    "company": "All"
+  },
+  {
+    "title": "What is Kubernetes? 19",
+    "diff": "Easy",
+    "topic": "K8s",
+    "company": "DevOps"
+  },
+  {
+    "title": "Jenkins vs GitHub Actions 20",
+    "diff": "Easy",
+    "topic": "CI/CD",
+    "company": "DevOps"
+  },
+  {
+    "title": "What is Cloud Computing? 21",
+    "diff": "Easy",
+    "topic": "Cloud Basics",
+    "company": "TCS"
+  },
+  {
+    "title": "EC2 Instance Types 22",
+    "diff": "Easy",
+    "topic": "AWS",
+    "company": "Infosys"
+  },
+  {
+    "title": "Docker vs VM 23",
+    "diff": "Easy",
+    "topic": "Docker",
+    "company": "All"
+  },
+  {
+    "title": "What is Kubernetes? 24",
+    "diff": "Easy",
+    "topic": "K8s",
+    "company": "DevOps"
+  },
+  {
+    "title": "Jenkins vs GitHub Actions 25",
+    "diff": "Easy",
+    "topic": "CI/CD",
+    "company": "DevOps"
+  },
+  {
+    "title": "What is Cloud Computing? 26",
+    "diff": "Easy",
+    "topic": "Cloud Basics",
+    "company": "TCS"
+  },
+  {
+    "title": "EC2 Instance Types 27",
+    "diff": "Easy",
+    "topic": "AWS",
+    "company": "Infosys"
+  },
+  {
+    "title": "Docker vs VM 28",
+    "diff": "Easy",
+    "topic": "Docker",
+    "company": "All"
+  },
+  {
+    "title": "What is Kubernetes? 29",
+    "diff": "Easy",
+    "topic": "K8s",
+    "company": "DevOps"
+  },
+  {
+    "title": "Jenkins vs GitHub Actions 30",
+    "diff": "Easy",
+    "topic": "CI/CD",
+    "company": "DevOps"
+  },
+  {
+    "title": "What is Cloud Computing? 31",
+    "diff": "Easy",
+    "topic": "Cloud Basics",
+    "company": "TCS"
+  },
+  {
+    "title": "EC2 Instance Types 32",
+    "diff": "Easy",
+    "topic": "AWS",
+    "company": "Infosys"
+  },
+  {
+    "title": "Docker vs VM 33",
+    "diff": "Easy",
+    "topic": "Docker",
+    "company": "All"
+  },
+  {
+    "title": "What is Kubernetes? 34",
+    "diff": "Easy",
+    "topic": "K8s",
+    "company": "DevOps"
+  },
+  {
+    "title": "Jenkins vs GitHub Actions 35",
+    "diff": "Easy",
+    "topic": "CI/CD",
+    "company": "DevOps"
+  },
+  {
+    "title": "What is Cloud Computing? 36",
+    "diff": "Easy",
+    "topic": "Cloud Basics",
+    "company": "TCS"
+  },
+  {
+    "title": "EC2 Instance Types 37",
+    "diff": "Easy",
+    "topic": "AWS",
+    "company": "Infosys"
+  },
+  {
+    "title": "Docker vs VM 38",
+    "diff": "Easy",
+    "topic": "Docker",
+    "company": "All"
+  },
+  {
+    "title": "What is Kubernetes? 39",
+    "diff": "Easy",
+    "topic": "K8s",
+    "company": "DevOps"
+  },
+  {
+    "title": "Jenkins vs GitHub Actions 40",
+    "diff": "Easy",
+    "topic": "CI/CD",
+    "company": "DevOps"
+  },
+  {
+    "title": "What is Cloud Computing? 41",
+    "diff": "Easy",
+    "topic": "Cloud Basics",
+    "company": "TCS"
+  },
+  {
+    "title": "EC2 Instance Types 42",
+    "diff": "Easy",
+    "topic": "AWS",
+    "company": "Infosys"
+  },
+  {
+    "title": "Docker vs VM 43",
+    "diff": "Easy",
+    "topic": "Docker",
+    "company": "All"
+  },
+  {
+    "title": "What is Kubernetes? 44",
+    "diff": "Easy",
+    "topic": "K8s",
+    "company": "DevOps"
+  },
+  {
+    "title": "Jenkins vs GitHub Actions 45",
+    "diff": "Easy",
+    "topic": "CI/CD",
+    "company": "DevOps"
+  },
+  {
+    "title": "What is Cloud Computing? 46",
+    "diff": "Easy",
+    "topic": "Cloud Basics",
+    "company": "TCS"
+  },
+  {
+    "title": "EC2 Instance Types 47",
+    "diff": "Easy",
+    "topic": "AWS",
+    "company": "Infosys"
+  },
+  {
+    "title": "Docker vs VM 48",
+    "diff": "Easy",
+    "topic": "Docker",
+    "company": "All"
+  },
+  {
+    "title": "What is Kubernetes? 49",
+    "diff": "Easy",
+    "topic": "K8s",
+    "company": "DevOps"
+  },
+  {
+    "title": "Jenkins vs GitHub Actions 50",
+    "diff": "Easy",
+    "topic": "CI/CD",
+    "company": "DevOps"
+  },
+  {
+    "title": "What is Cloud Computing? 51",
+    "diff": "Easy",
+    "topic": "Cloud Basics",
+    "company": "TCS"
+  },
+  {
+    "title": "EC2 Instance Types 52",
+    "diff": "Easy",
+    "topic": "AWS",
+    "company": "Infosys"
+  },
+  {
+    "title": "Docker vs VM 53",
+    "diff": "Easy",
+    "topic": "Docker",
+    "company": "All"
+  },
+  {
+    "title": "What is Kubernetes? 54",
+    "diff": "Easy",
+    "topic": "K8s",
+    "company": "DevOps"
+  },
+  {
+    "title": "Jenkins vs GitHub Actions 55",
+    "diff": "Easy",
+    "topic": "CI/CD",
+    "company": "DevOps"
+  },
+  {
+    "title": "What is Cloud Computing? 56",
+    "diff": "Easy",
+    "topic": "Cloud Basics",
+    "company": "TCS"
+  },
+  {
+    "title": "EC2 Instance Types 57",
+    "diff": "Easy",
+    "topic": "AWS",
+    "company": "Infosys"
+  },
+  {
+    "title": "Docker vs VM 58",
+    "diff": "Easy",
+    "topic": "Docker",
+    "company": "All"
+  },
+  {
+    "title": "What is Kubernetes? 59",
+    "diff": "Easy",
+    "topic": "K8s",
+    "company": "DevOps"
+  },
+  {
+    "title": "Jenkins vs GitHub Actions 60",
+    "diff": "Easy",
+    "topic": "CI/CD",
+    "company": "DevOps"
+  },
+  {
+    "title": "What is Cloud Computing? 61",
+    "diff": "Easy",
+    "topic": "Cloud Basics",
+    "company": "TCS"
+  },
+  {
+    "title": "EC2 Instance Types 62",
+    "diff": "Easy",
+    "topic": "AWS",
+    "company": "Infosys"
+  },
+  {
+    "title": "Docker vs VM 63",
+    "diff": "Easy",
+    "topic": "Docker",
+    "company": "All"
+  },
+  {
+    "title": "What is Kubernetes? 64",
+    "diff": "Easy",
+    "topic": "K8s",
+    "company": "DevOps"
+  },
+  {
+    "title": "Jenkins vs GitHub Actions 65",
+    "diff": "Easy",
+    "topic": "CI/CD",
+    "company": "DevOps"
+  },
+  {
+    "title": "What is Cloud Computing? 66",
+    "diff": "Easy",
+    "topic": "Cloud Basics",
+    "company": "TCS"
+  },
+  {
+    "title": "EC2 Instance Types 67",
+    "diff": "Easy",
+    "topic": "AWS",
+    "company": "Infosys"
+  },
+  {
+    "title": "Docker vs VM 68",
+    "diff": "Easy",
+    "topic": "Docker",
+    "company": "All"
+  },
+  {
+    "title": "What is Kubernetes? 69",
+    "diff": "Easy",
+    "topic": "K8s",
+    "company": "DevOps"
+  },
+  {
+    "title": "Jenkins vs GitHub Actions 70",
+    "diff": "Easy",
+    "topic": "CI/CD",
+    "company": "DevOps"
+  },
+  {
+    "title": "What is Cloud Computing? 71",
+    "diff": "Easy",
+    "topic": "Cloud Basics",
+    "company": "TCS"
+  },
+  {
+    "title": "EC2 Instance Types 72",
+    "diff": "Easy",
+    "topic": "AWS",
+    "company": "Infosys"
+  },
+  {
+    "title": "Docker vs VM 73",
+    "diff": "Easy",
+    "topic": "Docker",
+    "company": "All"
+  },
+  {
+    "title": "What is Kubernetes? 74",
+    "diff": "Easy",
+    "topic": "K8s",
+    "company": "DevOps"
+  },
+  {
+    "title": "Jenkins vs GitHub Actions 75",
+    "diff": "Easy",
+    "topic": "CI/CD",
+    "company": "DevOps"
+  },
+  {
+    "title": "What is Cloud Computing? 76",
+    "diff": "Easy",
+    "topic": "Cloud Basics",
+    "company": "TCS"
+  },
+  {
+    "title": "EC2 Instance Types 77",
+    "diff": "Easy",
+    "topic": "AWS",
+    "company": "Infosys"
+  },
+  {
+    "title": "Docker vs VM 78",
+    "diff": "Easy",
+    "topic": "Docker",
+    "company": "All"
+  },
+  {
+    "title": "What is Kubernetes? 79",
+    "diff": "Easy",
+    "topic": "K8s",
+    "company": "DevOps"
+  },
+  {
+    "title": "Jenkins vs GitHub Actions 80",
+    "diff": "Easy",
+    "topic": "CI/CD",
+    "company": "DevOps"
+  },
+  {
+    "title": "What is Cloud Computing? 81",
+    "diff": "Easy",
+    "topic": "Cloud Basics",
+    "company": "TCS"
+  },
+  {
+    "title": "EC2 Instance Types 82",
+    "diff": "Easy",
+    "topic": "AWS",
+    "company": "Infosys"
+  },
+  {
+    "title": "Docker vs VM 83",
+    "diff": "Easy",
+    "topic": "Docker",
+    "company": "All"
+  },
+  {
+    "title": "What is Kubernetes? 84",
+    "diff": "Easy",
+    "topic": "K8s",
+    "company": "DevOps"
+  },
+  {
+    "title": "Jenkins vs GitHub Actions 85",
+    "diff": "Easy",
+    "topic": "CI/CD",
+    "company": "DevOps"
+  },
+  {
+    "title": "What is Cloud Computing? 86",
+    "diff": "Easy",
+    "topic": "Cloud Basics",
+    "company": "TCS"
+  },
+  {
+    "title": "EC2 Instance Types 87",
+    "diff": "Easy",
+    "topic": "AWS",
+    "company": "Infosys"
+  },
+  {
+    "title": "Docker vs VM 88",
+    "diff": "Easy",
+    "topic": "Docker",
+    "company": "All"
+  },
+  {
+    "title": "What is Kubernetes? 89",
+    "diff": "Easy",
+    "topic": "K8s",
+    "company": "DevOps"
+  },
+  {
+    "title": "Jenkins vs GitHub Actions 90",
+    "diff": "Easy",
+    "topic": "CI/CD",
+    "company": "DevOps"
+  },
+  {
+    "title": "What is Cloud Computing? 91",
+    "diff": "Easy",
+    "topic": "Cloud Basics",
+    "company": "TCS"
+  },
+  {
+    "title": "EC2 Instance Types 92",
+    "diff": "Easy",
+    "topic": "AWS",
+    "company": "Infosys"
+  },
+  {
+    "title": "Docker vs VM 93",
+    "diff": "Easy",
+    "topic": "Docker",
+    "company": "All"
+  },
+  {
+    "title": "What is Kubernetes? 94",
+    "diff": "Easy",
+    "topic": "K8s",
+    "company": "DevOps"
+  },
+  {
+    "title": "Jenkins vs GitHub Actions 95",
+    "diff": "Easy",
+    "topic": "CI/CD",
+    "company": "DevOps"
+  },
+  {
+    "title": "What is Cloud Computing? 96",
+    "diff": "Easy",
+    "topic": "Cloud Basics",
+    "company": "TCS"
+  },
+  {
+    "title": "EC2 Instance Types 97",
+    "diff": "Easy",
+    "topic": "AWS",
+    "company": "Infosys"
+  },
+  {
+    "title": "Docker vs VM 98",
+    "diff": "Easy",
+    "topic": "Docker",
+    "company": "All"
+  },
+  {
+    "title": "What is Kubernetes? 99",
+    "diff": "Easy",
+    "topic": "K8s",
+    "company": "DevOps"
+  },
+  {
+    "title": "Jenkins vs GitHub Actions 100",
+    "diff": "Easy",
+    "topic": "CI/CD",
+    "company": "DevOps"
+  }
+]

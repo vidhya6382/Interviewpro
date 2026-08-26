@@ -1,0 +1,602 @@
+[
+  {
+    "title": "DAX - Calculate Total Sales",
+    "diff": "Easy",
+    "topic": "DAX",
+    "company": "Power BI"
+  },
+  {
+    "title": "DAX - Year-over-Year Growth",
+    "diff": "Medium",
+    "topic": "DAX",
+    "company": "BI Developer"
+  },
+  {
+    "title": "Power Query - Data Transformation",
+    "diff": "Easy",
+    "topic": "Power Query",
+    "company": "Power BI"
+  },
+  {
+    "title": "Data Modeling - Star Schema",
+    "diff": "Medium",
+    "topic": "Modeling",
+    "company": "BI"
+  },
+  {
+    "title": "RLS Implementation Scenario",
+    "diff": "Hard",
+    "topic": "RLS",
+    "company": "Enterprise BI"
+  },
+  {
+    "title": "SQL for Power BI - Joins",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "TCS"
+  },
+  {
+    "title": "KPI Dashboard Design",
+    "diff": "Medium",
+    "topic": "Dashboard",
+    "company": "Analytics"
+  },
+  {
+    "title": "Performance Optimization in PBI",
+    "diff": "Hard",
+    "topic": "Optimization",
+    "company": "Power BI"
+  },
+  {
+    "title": "DAX - RANKX & TOPN",
+    "diff": "Medium",
+    "topic": "DAX",
+    "company": "BI"
+  },
+  {
+    "title": "Power BI Service Deployment",
+    "diff": "Easy",
+    "topic": "Service",
+    "company": "Power BI"
+  },
+  {
+    "title": "SQL - Find Duplicates",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "TCS, Infosys"
+  },
+  {
+    "title": "Excel - Conditional Formatting Task",
+    "diff": "Easy",
+    "topic": "Excel",
+    "company": "Accenture"
+  },
+  {
+    "title": "Python - Null Handling in Pandas",
+    "diff": "Easy",
+    "topic": "Python",
+    "company": "Zoho"
+  },
+  {
+    "title": "Power BI - Slicer & Filters",
+    "diff": "Easy",
+    "topic": "Power BI",
+    "company": "BI"
+  },
+  {
+    "title": "Statistics - Mean Median Mode",
+    "diff": "Easy",
+    "topic": "Statistics",
+    "company": "Analyst"
+  },
+  {
+    "title": "SQL - Find Duplicates 16",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "TCS, Infosys"
+  },
+  {
+    "title": "Excel - Conditional Formatting Task 17",
+    "diff": "Easy",
+    "topic": "Excel",
+    "company": "Accenture"
+  },
+  {
+    "title": "Python - Null Handling in Pandas 18",
+    "diff": "Easy",
+    "topic": "Python",
+    "company": "Zoho"
+  },
+  {
+    "title": "Power BI - Slicer & Filters 19",
+    "diff": "Easy",
+    "topic": "Power BI",
+    "company": "BI"
+  },
+  {
+    "title": "Statistics - Mean Median Mode 20",
+    "diff": "Easy",
+    "topic": "Statistics",
+    "company": "Analyst"
+  },
+  {
+    "title": "SQL - Find Duplicates 21",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "TCS, Infosys"
+  },
+  {
+    "title": "Excel - Conditional Formatting Task 22",
+    "diff": "Easy",
+    "topic": "Excel",
+    "company": "Accenture"
+  },
+  {
+    "title": "Python - Null Handling in Pandas 23",
+    "diff": "Easy",
+    "topic": "Python",
+    "company": "Zoho"
+  },
+  {
+    "title": "Power BI - Slicer & Filters 24",
+    "diff": "Easy",
+    "topic": "Power BI",
+    "company": "BI"
+  },
+  {
+    "title": "Statistics - Mean Median Mode 25",
+    "diff": "Easy",
+    "topic": "Statistics",
+    "company": "Analyst"
+  },
+  {
+    "title": "SQL - Find Duplicates 26",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "TCS, Infosys"
+  },
+  {
+    "title": "Excel - Conditional Formatting Task 27",
+    "diff": "Easy",
+    "topic": "Excel",
+    "company": "Accenture"
+  },
+  {
+    "title": "Python - Null Handling in Pandas 28",
+    "diff": "Easy",
+    "topic": "Python",
+    "company": "Zoho"
+  },
+  {
+    "title": "Power BI - Slicer & Filters 29",
+    "diff": "Easy",
+    "topic": "Power BI",
+    "company": "BI"
+  },
+  {
+    "title": "Statistics - Mean Median Mode 30",
+    "diff": "Easy",
+    "topic": "Statistics",
+    "company": "Analyst"
+  },
+  {
+    "title": "SQL - Find Duplicates 31",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "TCS, Infosys"
+  },
+  {
+    "title": "Excel - Conditional Formatting Task 32",
+    "diff": "Easy",
+    "topic": "Excel",
+    "company": "Accenture"
+  },
+  {
+    "title": "Python - Null Handling in Pandas 33",
+    "diff": "Easy",
+    "topic": "Python",
+    "company": "Zoho"
+  },
+  {
+    "title": "Power BI - Slicer & Filters 34",
+    "diff": "Easy",
+    "topic": "Power BI",
+    "company": "BI"
+  },
+  {
+    "title": "Statistics - Mean Median Mode 35",
+    "diff": "Easy",
+    "topic": "Statistics",
+    "company": "Analyst"
+  },
+  {
+    "title": "SQL - Find Duplicates 36",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "TCS, Infosys"
+  },
+  {
+    "title": "Excel - Conditional Formatting Task 37",
+    "diff": "Easy",
+    "topic": "Excel",
+    "company": "Accenture"
+  },
+  {
+    "title": "Python - Null Handling in Pandas 38",
+    "diff": "Easy",
+    "topic": "Python",
+    "company": "Zoho"
+  },
+  {
+    "title": "Power BI - Slicer & Filters 39",
+    "diff": "Easy",
+    "topic": "Power BI",
+    "company": "BI"
+  },
+  {
+    "title": "Statistics - Mean Median Mode 40",
+    "diff": "Easy",
+    "topic": "Statistics",
+    "company": "Analyst"
+  },
+  {
+    "title": "SQL - Find Duplicates 41",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "TCS, Infosys"
+  },
+  {
+    "title": "Excel - Conditional Formatting Task 42",
+    "diff": "Easy",
+    "topic": "Excel",
+    "company": "Accenture"
+  },
+  {
+    "title": "Python - Null Handling in Pandas 43",
+    "diff": "Easy",
+    "topic": "Python",
+    "company": "Zoho"
+  },
+  {
+    "title": "Power BI - Slicer & Filters 44",
+    "diff": "Easy",
+    "topic": "Power BI",
+    "company": "BI"
+  },
+  {
+    "title": "Statistics - Mean Median Mode 45",
+    "diff": "Easy",
+    "topic": "Statistics",
+    "company": "Analyst"
+  },
+  {
+    "title": "SQL - Find Duplicates 46",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "TCS, Infosys"
+  },
+  {
+    "title": "Excel - Conditional Formatting Task 47",
+    "diff": "Easy",
+    "topic": "Excel",
+    "company": "Accenture"
+  },
+  {
+    "title": "Python - Null Handling in Pandas 48",
+    "diff": "Easy",
+    "topic": "Python",
+    "company": "Zoho"
+  },
+  {
+    "title": "Power BI - Slicer & Filters 49",
+    "diff": "Easy",
+    "topic": "Power BI",
+    "company": "BI"
+  },
+  {
+    "title": "Statistics - Mean Median Mode 50",
+    "diff": "Easy",
+    "topic": "Statistics",
+    "company": "Analyst"
+  },
+  {
+    "title": "SQL - Find Duplicates 51",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "TCS, Infosys"
+  },
+  {
+    "title": "Excel - Conditional Formatting Task 52",
+    "diff": "Easy",
+    "topic": "Excel",
+    "company": "Accenture"
+  },
+  {
+    "title": "Python - Null Handling in Pandas 53",
+    "diff": "Easy",
+    "topic": "Python",
+    "company": "Zoho"
+  },
+  {
+    "title": "Power BI - Slicer & Filters 54",
+    "diff": "Easy",
+    "topic": "Power BI",
+    "company": "BI"
+  },
+  {
+    "title": "Statistics - Mean Median Mode 55",
+    "diff": "Easy",
+    "topic": "Statistics",
+    "company": "Analyst"
+  },
+  {
+    "title": "SQL - Find Duplicates 56",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "TCS, Infosys"
+  },
+  {
+    "title": "Excel - Conditional Formatting Task 57",
+    "diff": "Easy",
+    "topic": "Excel",
+    "company": "Accenture"
+  },
+  {
+    "title": "Python - Null Handling in Pandas 58",
+    "diff": "Easy",
+    "topic": "Python",
+    "company": "Zoho"
+  },
+  {
+    "title": "Power BI - Slicer & Filters 59",
+    "diff": "Easy",
+    "topic": "Power BI",
+    "company": "BI"
+  },
+  {
+    "title": "Statistics - Mean Median Mode 60",
+    "diff": "Easy",
+    "topic": "Statistics",
+    "company": "Analyst"
+  },
+  {
+    "title": "SQL - Find Duplicates 61",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "TCS, Infosys"
+  },
+  {
+    "title": "Excel - Conditional Formatting Task 62",
+    "diff": "Easy",
+    "topic": "Excel",
+    "company": "Accenture"
+  },
+  {
+    "title": "Python - Null Handling in Pandas 63",
+    "diff": "Easy",
+    "topic": "Python",
+    "company": "Zoho"
+  },
+  {
+    "title": "Power BI - Slicer & Filters 64",
+    "diff": "Easy",
+    "topic": "Power BI",
+    "company": "BI"
+  },
+  {
+    "title": "Statistics - Mean Median Mode 65",
+    "diff": "Easy",
+    "topic": "Statistics",
+    "company": "Analyst"
+  },
+  {
+    "title": "SQL - Find Duplicates 66",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "TCS, Infosys"
+  },
+  {
+    "title": "Excel - Conditional Formatting Task 67",
+    "diff": "Easy",
+    "topic": "Excel",
+    "company": "Accenture"
+  },
+  {
+    "title": "Python - Null Handling in Pandas 68",
+    "diff": "Easy",
+    "topic": "Python",
+    "company": "Zoho"
+  },
+  {
+    "title": "Power BI - Slicer & Filters 69",
+    "diff": "Easy",
+    "topic": "Power BI",
+    "company": "BI"
+  },
+  {
+    "title": "Statistics - Mean Median Mode 70",
+    "diff": "Easy",
+    "topic": "Statistics",
+    "company": "Analyst"
+  },
+  {
+    "title": "SQL - Find Duplicates 71",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "TCS, Infosys"
+  },
+  {
+    "title": "Excel - Conditional Formatting Task 72",
+    "diff": "Easy",
+    "topic": "Excel",
+    "company": "Accenture"
+  },
+  {
+    "title": "Python - Null Handling in Pandas 73",
+    "diff": "Easy",
+    "topic": "Python",
+    "company": "Zoho"
+  },
+  {
+    "title": "Power BI - Slicer & Filters 74",
+    "diff": "Easy",
+    "topic": "Power BI",
+    "company": "BI"
+  },
+  {
+    "title": "Statistics - Mean Median Mode 75",
+    "diff": "Easy",
+    "topic": "Statistics",
+    "company": "Analyst"
+  },
+  {
+    "title": "SQL - Find Duplicates 76",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "TCS, Infosys"
+  },
+  {
+    "title": "Excel - Conditional Formatting Task 77",
+    "diff": "Easy",
+    "topic": "Excel",
+    "company": "Accenture"
+  },
+  {
+    "title": "Python - Null Handling in Pandas 78",
+    "diff": "Easy",
+    "topic": "Python",
+    "company": "Zoho"
+  },
+  {
+    "title": "Power BI - Slicer & Filters 79",
+    "diff": "Easy",
+    "topic": "Power BI",
+    "company": "BI"
+  },
+  {
+    "title": "Statistics - Mean Median Mode 80",
+    "diff": "Easy",
+    "topic": "Statistics",
+    "company": "Analyst"
+  },
+  {
+    "title": "SQL - Find Duplicates 81",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "TCS, Infosys"
+  },
+  {
+    "title": "Excel - Conditional Formatting Task 82",
+    "diff": "Easy",
+    "topic": "Excel",
+    "company": "Accenture"
+  },
+  {
+    "title": "Python - Null Handling in Pandas 83",
+    "diff": "Easy",
+    "topic": "Python",
+    "company": "Zoho"
+  },
+  {
+    "title": "Power BI - Slicer & Filters 84",
+    "diff": "Easy",
+    "topic": "Power BI",
+    "company": "BI"
+  },
+  {
+    "title": "Statistics - Mean Median Mode 85",
+    "diff": "Easy",
+    "topic": "Statistics",
+    "company": "Analyst"
+  },
+  {
+    "title": "SQL - Find Duplicates 86",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "TCS, Infosys"
+  },
+  {
+    "title": "Excel - Conditional Formatting Task 87",
+    "diff": "Easy",
+    "topic": "Excel",
+    "company": "Accenture"
+  },
+  {
+    "title": "Python - Null Handling in Pandas 88",
+    "diff": "Easy",
+    "topic": "Python",
+    "company": "Zoho"
+  },
+  {
+    "title": "Power BI - Slicer & Filters 89",
+    "diff": "Easy",
+    "topic": "Power BI",
+    "company": "BI"
+  },
+  {
+    "title": "Statistics - Mean Median Mode 90",
+    "diff": "Easy",
+    "topic": "Statistics",
+    "company": "Analyst"
+  },
+  {
+    "title": "SQL - Find Duplicates 91",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "TCS, Infosys"
+  },
+  {
+    "title": "Excel - Conditional Formatting Task 92",
+    "diff": "Easy",
+    "topic": "Excel",
+    "company": "Accenture"
+  },
+  {
+    "title": "Python - Null Handling in Pandas 93",
+    "diff": "Easy",
+    "topic": "Python",
+    "company": "Zoho"
+  },
+  {
+    "title": "Power BI - Slicer & Filters 94",
+    "diff": "Easy",
+    "topic": "Power BI",
+    "company": "BI"
+  },
+  {
+    "title": "Statistics - Mean Median Mode 95",
+    "diff": "Easy",
+    "topic": "Statistics",
+    "company": "Analyst"
+  },
+  {
+    "title": "SQL - Find Duplicates 96",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "TCS, Infosys"
+  },
+  {
+    "title": "Excel - Conditional Formatting Task 97",
+    "diff": "Easy",
+    "topic": "Excel",
+    "company": "Accenture"
+  },
+  {
+    "title": "Python - Null Handling in Pandas 98",
+    "diff": "Easy",
+    "topic": "Python",
+    "company": "Zoho"
+  },
+  {
+    "title": "Power BI - Slicer & Filters 99",
+    "diff": "Easy",
+    "topic": "Power BI",
+    "company": "BI"
+  },
+  {
+    "title": "Statistics - Mean Median Mode 100",
+    "diff": "Easy",
+    "topic": "Statistics",
+    "company": "Analyst"
+  }
+]

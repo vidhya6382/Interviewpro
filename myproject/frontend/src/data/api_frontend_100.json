@@ -1,0 +1,602 @@
+[
+  {
+    "title": "GET vs POST vs PUT vs DELETE",
+    "diff": "Easy",
+    "topic": "HTTP Methods",
+    "company": "All Companies"
+  },
+  {
+    "title": "Status Codes - 200, 201, 400, 401, 500",
+    "diff": "Easy",
+    "topic": "HTTP",
+    "company": "TCS, Infosys"
+  },
+  {
+    "title": "Postman - Create Collection & Assertions",
+    "diff": "Easy",
+    "topic": "Postman",
+    "company": "QA"
+  },
+  {
+    "title": "Rest Assured - Validate JSON Response",
+    "diff": "Medium",
+    "topic": "Rest Assured",
+    "company": "Automation"
+  },
+  {
+    "title": "Bearer Token Authentication",
+    "diff": "Medium",
+    "topic": "Auth",
+    "company": "API Testing"
+  },
+  {
+    "title": "Chaining API Requests in Postman",
+    "diff": "Medium",
+    "topic": "Postman",
+    "company": "API QA"
+  },
+  {
+    "title": "JSON Schema Validation",
+    "diff": "Hard",
+    "topic": "Validation",
+    "company": "API"
+  },
+  {
+    "title": "CRUD Operations with Rest Assured",
+    "diff": "Medium",
+    "topic": "Rest Assured",
+    "company": "QA"
+  },
+  {
+    "title": "SOAP vs REST Difference",
+    "diff": "Easy",
+    "topic": "Theory",
+    "company": "TCS"
+  },
+  {
+    "title": "API Automation Framework Structure",
+    "diff": "Hard",
+    "topic": "Framework",
+    "company": "Product"
+  },
+  {
+    "title": "What is Functional Testing?",
+    "diff": "Easy",
+    "topic": "Manual",
+    "company": "TCS"
+  },
+  {
+    "title": "Write Test Cases for Lift",
+    "diff": "Medium",
+    "topic": "Test Cases",
+    "company": "Interview"
+  },
+  {
+    "title": "Handle Dropdown in Selenium",
+    "diff": "Easy",
+    "topic": "Selenium",
+    "company": "CTS"
+  },
+  {
+    "title": "POST API with Body in Postman",
+    "diff": "Easy",
+    "topic": "Postman",
+    "company": "API"
+  },
+  {
+    "title": "SQL - Find Duplicate Records",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "QA"
+  },
+  {
+    "title": "What is Functional Testing? 16",
+    "diff": "Easy",
+    "topic": "Manual",
+    "company": "TCS"
+  },
+  {
+    "title": "Write Test Cases for Lift 17",
+    "diff": "Medium",
+    "topic": "Test Cases",
+    "company": "Interview"
+  },
+  {
+    "title": "Handle Dropdown in Selenium 18",
+    "diff": "Easy",
+    "topic": "Selenium",
+    "company": "CTS"
+  },
+  {
+    "title": "POST API with Body in Postman 19",
+    "diff": "Easy",
+    "topic": "Postman",
+    "company": "API"
+  },
+  {
+    "title": "SQL - Find Duplicate Records 20",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "QA"
+  },
+  {
+    "title": "What is Functional Testing? 21",
+    "diff": "Easy",
+    "topic": "Manual",
+    "company": "TCS"
+  },
+  {
+    "title": "Write Test Cases for Lift 22",
+    "diff": "Medium",
+    "topic": "Test Cases",
+    "company": "Interview"
+  },
+  {
+    "title": "Handle Dropdown in Selenium 23",
+    "diff": "Easy",
+    "topic": "Selenium",
+    "company": "CTS"
+  },
+  {
+    "title": "POST API with Body in Postman 24",
+    "diff": "Easy",
+    "topic": "Postman",
+    "company": "API"
+  },
+  {
+    "title": "SQL - Find Duplicate Records 25",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "QA"
+  },
+  {
+    "title": "What is Functional Testing? 26",
+    "diff": "Easy",
+    "topic": "Manual",
+    "company": "TCS"
+  },
+  {
+    "title": "Write Test Cases for Lift 27",
+    "diff": "Medium",
+    "topic": "Test Cases",
+    "company": "Interview"
+  },
+  {
+    "title": "Handle Dropdown in Selenium 28",
+    "diff": "Easy",
+    "topic": "Selenium",
+    "company": "CTS"
+  },
+  {
+    "title": "POST API with Body in Postman 29",
+    "diff": "Easy",
+    "topic": "Postman",
+    "company": "API"
+  },
+  {
+    "title": "SQL - Find Duplicate Records 30",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "QA"
+  },
+  {
+    "title": "What is Functional Testing? 31",
+    "diff": "Easy",
+    "topic": "Manual",
+    "company": "TCS"
+  },
+  {
+    "title": "Write Test Cases for Lift 32",
+    "diff": "Medium",
+    "topic": "Test Cases",
+    "company": "Interview"
+  },
+  {
+    "title": "Handle Dropdown in Selenium 33",
+    "diff": "Easy",
+    "topic": "Selenium",
+    "company": "CTS"
+  },
+  {
+    "title": "POST API with Body in Postman 34",
+    "diff": "Easy",
+    "topic": "Postman",
+    "company": "API"
+  },
+  {
+    "title": "SQL - Find Duplicate Records 35",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "QA"
+  },
+  {
+    "title": "What is Functional Testing? 36",
+    "diff": "Easy",
+    "topic": "Manual",
+    "company": "TCS"
+  },
+  {
+    "title": "Write Test Cases for Lift 37",
+    "diff": "Medium",
+    "topic": "Test Cases",
+    "company": "Interview"
+  },
+  {
+    "title": "Handle Dropdown in Selenium 38",
+    "diff": "Easy",
+    "topic": "Selenium",
+    "company": "CTS"
+  },
+  {
+    "title": "POST API with Body in Postman 39",
+    "diff": "Easy",
+    "topic": "Postman",
+    "company": "API"
+  },
+  {
+    "title": "SQL - Find Duplicate Records 40",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "QA"
+  },
+  {
+    "title": "What is Functional Testing? 41",
+    "diff": "Easy",
+    "topic": "Manual",
+    "company": "TCS"
+  },
+  {
+    "title": "Write Test Cases for Lift 42",
+    "diff": "Medium",
+    "topic": "Test Cases",
+    "company": "Interview"
+  },
+  {
+    "title": "Handle Dropdown in Selenium 43",
+    "diff": "Easy",
+    "topic": "Selenium",
+    "company": "CTS"
+  },
+  {
+    "title": "POST API with Body in Postman 44",
+    "diff": "Easy",
+    "topic": "Postman",
+    "company": "API"
+  },
+  {
+    "title": "SQL - Find Duplicate Records 45",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "QA"
+  },
+  {
+    "title": "What is Functional Testing? 46",
+    "diff": "Easy",
+    "topic": "Manual",
+    "company": "TCS"
+  },
+  {
+    "title": "Write Test Cases for Lift 47",
+    "diff": "Medium",
+    "topic": "Test Cases",
+    "company": "Interview"
+  },
+  {
+    "title": "Handle Dropdown in Selenium 48",
+    "diff": "Easy",
+    "topic": "Selenium",
+    "company": "CTS"
+  },
+  {
+    "title": "POST API with Body in Postman 49",
+    "diff": "Easy",
+    "topic": "Postman",
+    "company": "API"
+  },
+  {
+    "title": "SQL - Find Duplicate Records 50",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "QA"
+  },
+  {
+    "title": "What is Functional Testing? 51",
+    "diff": "Easy",
+    "topic": "Manual",
+    "company": "TCS"
+  },
+  {
+    "title": "Write Test Cases for Lift 52",
+    "diff": "Medium",
+    "topic": "Test Cases",
+    "company": "Interview"
+  },
+  {
+    "title": "Handle Dropdown in Selenium 53",
+    "diff": "Easy",
+    "topic": "Selenium",
+    "company": "CTS"
+  },
+  {
+    "title": "POST API with Body in Postman 54",
+    "diff": "Easy",
+    "topic": "Postman",
+    "company": "API"
+  },
+  {
+    "title": "SQL - Find Duplicate Records 55",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "QA"
+  },
+  {
+    "title": "What is Functional Testing? 56",
+    "diff": "Easy",
+    "topic": "Manual",
+    "company": "TCS"
+  },
+  {
+    "title": "Write Test Cases for Lift 57",
+    "diff": "Medium",
+    "topic": "Test Cases",
+    "company": "Interview"
+  },
+  {
+    "title": "Handle Dropdown in Selenium 58",
+    "diff": "Easy",
+    "topic": "Selenium",
+    "company": "CTS"
+  },
+  {
+    "title": "POST API with Body in Postman 59",
+    "diff": "Easy",
+    "topic": "Postman",
+    "company": "API"
+  },
+  {
+    "title": "SQL - Find Duplicate Records 60",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "QA"
+  },
+  {
+    "title": "What is Functional Testing? 61",
+    "diff": "Easy",
+    "topic": "Manual",
+    "company": "TCS"
+  },
+  {
+    "title": "Write Test Cases for Lift 62",
+    "diff": "Medium",
+    "topic": "Test Cases",
+    "company": "Interview"
+  },
+  {
+    "title": "Handle Dropdown in Selenium 63",
+    "diff": "Easy",
+    "topic": "Selenium",
+    "company": "CTS"
+  },
+  {
+    "title": "POST API with Body in Postman 64",
+    "diff": "Easy",
+    "topic": "Postman",
+    "company": "API"
+  },
+  {
+    "title": "SQL - Find Duplicate Records 65",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "QA"
+  },
+  {
+    "title": "What is Functional Testing? 66",
+    "diff": "Easy",
+    "topic": "Manual",
+    "company": "TCS"
+  },
+  {
+    "title": "Write Test Cases for Lift 67",
+    "diff": "Medium",
+    "topic": "Test Cases",
+    "company": "Interview"
+  },
+  {
+    "title": "Handle Dropdown in Selenium 68",
+    "diff": "Easy",
+    "topic": "Selenium",
+    "company": "CTS"
+  },
+  {
+    "title": "POST API with Body in Postman 69",
+    "diff": "Easy",
+    "topic": "Postman",
+    "company": "API"
+  },
+  {
+    "title": "SQL - Find Duplicate Records 70",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "QA"
+  },
+  {
+    "title": "What is Functional Testing? 71",
+    "diff": "Easy",
+    "topic": "Manual",
+    "company": "TCS"
+  },
+  {
+    "title": "Write Test Cases for Lift 72",
+    "diff": "Medium",
+    "topic": "Test Cases",
+    "company": "Interview"
+  },
+  {
+    "title": "Handle Dropdown in Selenium 73",
+    "diff": "Easy",
+    "topic": "Selenium",
+    "company": "CTS"
+  },
+  {
+    "title": "POST API with Body in Postman 74",
+    "diff": "Easy",
+    "topic": "Postman",
+    "company": "API"
+  },
+  {
+    "title": "SQL - Find Duplicate Records 75",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "QA"
+  },
+  {
+    "title": "What is Functional Testing? 76",
+    "diff": "Easy",
+    "topic": "Manual",
+    "company": "TCS"
+  },
+  {
+    "title": "Write Test Cases for Lift 77",
+    "diff": "Medium",
+    "topic": "Test Cases",
+    "company": "Interview"
+  },
+  {
+    "title": "Handle Dropdown in Selenium 78",
+    "diff": "Easy",
+    "topic": "Selenium",
+    "company": "CTS"
+  },
+  {
+    "title": "POST API with Body in Postman 79",
+    "diff": "Easy",
+    "topic": "Postman",
+    "company": "API"
+  },
+  {
+    "title": "SQL - Find Duplicate Records 80",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "QA"
+  },
+  {
+    "title": "What is Functional Testing? 81",
+    "diff": "Easy",
+    "topic": "Manual",
+    "company": "TCS"
+  },
+  {
+    "title": "Write Test Cases for Lift 82",
+    "diff": "Medium",
+    "topic": "Test Cases",
+    "company": "Interview"
+  },
+  {
+    "title": "Handle Dropdown in Selenium 83",
+    "diff": "Easy",
+    "topic": "Selenium",
+    "company": "CTS"
+  },
+  {
+    "title": "POST API with Body in Postman 84",
+    "diff": "Easy",
+    "topic": "Postman",
+    "company": "API"
+  },
+  {
+    "title": "SQL - Find Duplicate Records 85",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "QA"
+  },
+  {
+    "title": "What is Functional Testing? 86",
+    "diff": "Easy",
+    "topic": "Manual",
+    "company": "TCS"
+  },
+  {
+    "title": "Write Test Cases for Lift 87",
+    "diff": "Medium",
+    "topic": "Test Cases",
+    "company": "Interview"
+  },
+  {
+    "title": "Handle Dropdown in Selenium 88",
+    "diff": "Easy",
+    "topic": "Selenium",
+    "company": "CTS"
+  },
+  {
+    "title": "POST API with Body in Postman 89",
+    "diff": "Easy",
+    "topic": "Postman",
+    "company": "API"
+  },
+  {
+    "title": "SQL - Find Duplicate Records 90",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "QA"
+  },
+  {
+    "title": "What is Functional Testing? 91",
+    "diff": "Easy",
+    "topic": "Manual",
+    "company": "TCS"
+  },
+  {
+    "title": "Write Test Cases for Lift 92",
+    "diff": "Medium",
+    "topic": "Test Cases",
+    "company": "Interview"
+  },
+  {
+    "title": "Handle Dropdown in Selenium 93",
+    "diff": "Easy",
+    "topic": "Selenium",
+    "company": "CTS"
+  },
+  {
+    "title": "POST API with Body in Postman 94",
+    "diff": "Easy",
+    "topic": "Postman",
+    "company": "API"
+  },
+  {
+    "title": "SQL - Find Duplicate Records 95",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "QA"
+  },
+  {
+    "title": "What is Functional Testing? 96",
+    "diff": "Easy",
+    "topic": "Manual",
+    "company": "TCS"
+  },
+  {
+    "title": "Write Test Cases for Lift 97",
+    "diff": "Medium",
+    "topic": "Test Cases",
+    "company": "Interview"
+  },
+  {
+    "title": "Handle Dropdown in Selenium 98",
+    "diff": "Easy",
+    "topic": "Selenium",
+    "company": "CTS"
+  },
+  {
+    "title": "POST API with Body in Postman 99",
+    "diff": "Easy",
+    "topic": "Postman",
+    "company": "API"
+  },
+  {
+    "title": "SQL - Find Duplicate Records 100",
+    "diff": "Easy",
+    "topic": "SQL",
+    "company": "QA"
+  }
+]

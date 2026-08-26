@@ -1,0 +1,4 @@
+.code-card{ background:white; border:1px solid #eee; padding:16px; border-radius:12px; margin-top:16px; }
+.code-item{ display:flex; gap:10px; align-items:center; padding:10px; background:#F8FAFF; border-radius:8px; margin-top:8px; }
+.code-item span{ font-size:10px; padding:3px 6px; border-radius:4px; background:#DBEAFE; color:#2563EB; }
+.code-item p{ flex:1; margin:0; font-size:13px; } .code-item button{ background:#0F172A; color:white; border:none; padding:6px 12px; border-radius:6px; font-size:11px; }

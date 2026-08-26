@@ -1,0 +1,13 @@
+.role-detail-page{ max-width:1280px; margin:0 auto; padding:24px; background:#F8FAFF; min-height:100vh; }
+.role-detail-page h1{ text-align:center; color:#0F172A; border-bottom:2px dashed #CBD5E1; padding-bottom:12px; }
+.detail-grid-2{ display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:16px; margin-top:20px; }
+.detail-card{ background:white; border:1px solid #E2E8F0; border-radius:12px; padding:18px; }
+.detail-card h3{ margin:0 0 8px; font-size:15px; color:#0F172A; }
+.detail-card p{ font-size:12px; color:#64748B; margin:0 0 10px; }
+.detail-card ul{ margin:0; padding-left:16px; font-size:12px; color:#334155; line-height:1.8; }
+.small-tags{ display:flex; gap:6px; flex-wrap:wrap; margin:8px 0; }
+.small-tags span{ font-size:10px; background:#F1F5F9; padding:4px 8px; border-radius:6px; border:1px solid #E2E8F0; }
+.detail-card button{ margin-top:12px; background:#0F172A; color:white; border:none; padding:8px 14px; border-radius:8px; cursor:pointer; font-size:12px; }
+.detail-card.highlight{ background:linear-gradient(135deg,#080C2A,#1E1B4B); color:white; }
+.detail-card.highlight h3{ color:white; }.detail-card.highlight p{ color:#94A3B8; }
+.ai-btn{ background:linear-gradient(90deg,#2FA6FF,#8B5CF6)!important; }

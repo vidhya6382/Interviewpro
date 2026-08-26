@@ -1,0 +1,228 @@
+/* Blog.css - Professional Editorial Design */
+
+.blog-editorial{
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 20px 60px;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* HEADER */
+.ed-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #E2E8F0;
+  margin-bottom: 28px;
+}
+
+.ed-kicker{
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  color: #64748B;
+  text-transform: uppercase;
+}
+
+.ed-left h1{
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 8px 0 10px;
+  color: #0F172A;
+  letter-spacing: -0.02em;
+}
+.ed-left h1 i{
+  font-family: 'Georgia', serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #334155;
+}
+.ed-left p{
+  font-size: 15px;
+  color: #64748B;
+  max-width: 440px;
+  line-height: 1.5;
+}
+
+.ed-search{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  padding: 10px 14px;
+  min-width: 280px;
+  height: 44px;
+}
+.ed-search span{ opacity: 0.6; font-size: 14px; }
+.ed-search input{
+  border: 0;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+  color: #0F172A;
+}
+
+/* LIST */
+.ed-list{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.ed-article{
+  display: flex;
+  gap: 18px;
+  padding: 20px 20px;
+  background: #FFFFFF;
+  border: 1px solid #EEF2F7;
+  border-radius: 16px;
+  transition: all 0.2s ease;
+}
+.ed-article:hover{
+  border-color: #CBD5E1;
+  box-shadow: 0 8px 24px rgba(15,23,42,0.06);
+  transform: translateY(-1px);
+}
+
+.ed-letter{
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+}
+.ed-letter.big{
+  width: 56px;
+  height: 56px;
+  font-size: 16px;
+  border-radius: 14px;
+}
+
+.ed-content{ flex: 1; min-width: 0; }
+
+.ed-meta{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  color: #94A3B8;
+  font-weight: 500;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.ed-tag{
+  padding: 4px 8px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.ed-content h2{
+  font-size: 18px;
+  font-weight: 700;
+  color: #0F172A;
+  line-height: 1.35;
+  margin: 0 0 8px;
+  letter-spacing: -0.01em;
+}
+
+.ed-desc{
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 0 0 10px;
+}
+
+.ed-read{
+  font-size: 13px;
+  font-weight: 600;
+  color: #0F172A;
+  border-bottom: 1px solid #0F172A;
+  padding-bottom: 2px;
+}
+
+/* MODAL */
+.blog-modal-overlay{
+  position: fixed;
+  inset: 0;
+  background: rgba(15,23,42,0.55);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 16px;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.blog-modal{
+  background: white;
+  max-width: 760px;
+  width: 100%;
+  border-radius: 20px;
+  padding: 28px 28px 20px;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.18);
+  animation: modalIn 0.2s ease;
+}
+
+@keyframes modalIn{
+  from{ transform: translateY(10px); opacity: 0; }
+  to{ transform: translateY(0); opacity: 1; }
+}
+
+.close-modal{
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  border: 0;
+  background: #F1F5F9;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.15s;
+}
+.close-modal:hover{ background: #E2E8F0; }
+
+.blog-full-text{
+  white-space: pre-wrap;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.75;
+  background: #F8FAFC;
+  border: 1px solid #EEF2F7;
+  padding: 18px 18px;
+  border-radius: 14px;
+  margin-top: 16px;
+  color: #1E293B;
+  overflow-x: auto;
+}
+
+/* MOBILE */
+@media (max-width: 720px){
+  .ed-header{ flex-direction: column; align-items: flex-start; }
+  .ed-left h1{ font-size: 34px; }
+  .ed-search{ width: 100%; min-width: 0; }
+  .ed-article{ padding: 16px; }
+  .ed-content h2{ font-size: 16px; }
+  .blog-modal{ padding: 20px 16px; border-radius: 16px; }
+}

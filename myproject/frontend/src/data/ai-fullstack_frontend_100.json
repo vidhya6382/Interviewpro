@@ -1,0 +1,602 @@
+[
+  {
+    "title": "Build AI Chat API with FastAPI",
+    "diff": "Medium",
+    "topic": "AI Backend",
+    "company": "AI Full Stack"
+  },
+  {
+    "title": "RAG API with FastAPI + Pinecone",
+    "diff": "Hard",
+    "topic": "RAG",
+    "company": "AI Product"
+  },
+  {
+    "title": "LangChain Agent with Tools",
+    "diff": "Medium",
+    "topic": "LangChain",
+    "company": "GenAI"
+  },
+  {
+    "title": "Implement Embeddings Pipeline",
+    "diff": "Easy",
+    "topic": "Embeddings",
+    "company": "AI"
+  },
+  {
+    "title": "React AI Chat UI",
+    "diff": "Medium",
+    "topic": "Frontend AI",
+    "company": "Full Stack AI"
+  },
+  {
+    "title": "LLM Streaming with SSE",
+    "diff": "Medium",
+    "topic": "LLM",
+    "company": "AI Apps"
+  },
+  {
+    "title": "Dockerize AI App",
+    "diff": "Easy",
+    "topic": "DevOps",
+    "company": "Deployment"
+  },
+  {
+    "title": "Implement RAG Evaluation",
+    "diff": "Hard",
+    "topic": "RAG",
+    "company": "LLM Eval"
+  },
+  {
+    "title": "Two Sum",
+    "diff": "Easy",
+    "topic": "DSA",
+    "company": "Amazon, Google"
+  },
+  {
+    "title": "Valid Parentheses",
+    "diff": "Easy",
+    "topic": "DSA",
+    "company": "Zoho, TCS"
+  },
+  {
+    "title": "Implement TF-IDF from Scratch",
+    "diff": "Easy",
+    "topic": "NLP",
+    "company": "NLP Interview"
+  },
+  {
+    "title": "Build Intent Classifier",
+    "diff": "Medium",
+    "topic": "NLP",
+    "company": "AI Startup"
+  },
+  {
+    "title": "Fine-tune BERT for Classification",
+    "diff": "Hard",
+    "topic": "Transformers",
+    "company": "ML"
+  },
+  {
+    "title": "Implement LoRA Fine-tuning Concept",
+    "diff": "Hard",
+    "topic": "LLM",
+    "company": "GenAI"
+  },
+  {
+    "title": "Vector Search Optimization",
+    "diff": "Medium",
+    "topic": "Vector DB",
+    "company": "RAG"
+  },
+  {
+    "title": "Implement TF-IDF from Scratch 16",
+    "diff": "Easy",
+    "topic": "NLP",
+    "company": "NLP Interview"
+  },
+  {
+    "title": "Build Intent Classifier 17",
+    "diff": "Medium",
+    "topic": "NLP",
+    "company": "AI Startup"
+  },
+  {
+    "title": "Fine-tune BERT for Classification 18",
+    "diff": "Hard",
+    "topic": "Transformers",
+    "company": "ML"
+  },
+  {
+    "title": "Implement LoRA Fine-tuning Concept 19",
+    "diff": "Hard",
+    "topic": "LLM",
+    "company": "GenAI"
+  },
+  {
+    "title": "Vector Search Optimization 20",
+    "diff": "Medium",
+    "topic": "Vector DB",
+    "company": "RAG"
+  },
+  {
+    "title": "Implement TF-IDF from Scratch 21",
+    "diff": "Easy",
+    "topic": "NLP",
+    "company": "NLP Interview"
+  },
+  {
+    "title": "Build Intent Classifier 22",
+    "diff": "Medium",
+    "topic": "NLP",
+    "company": "AI Startup"
+  },
+  {
+    "title": "Fine-tune BERT for Classification 23",
+    "diff": "Hard",
+    "topic": "Transformers",
+    "company": "ML"
+  },
+  {
+    "title": "Implement LoRA Fine-tuning Concept 24",
+    "diff": "Hard",
+    "topic": "LLM",
+    "company": "GenAI"
+  },
+  {
+    "title": "Vector Search Optimization 25",
+    "diff": "Medium",
+    "topic": "Vector DB",
+    "company": "RAG"
+  },
+  {
+    "title": "Implement TF-IDF from Scratch 26",
+    "diff": "Easy",
+    "topic": "NLP",
+    "company": "NLP Interview"
+  },
+  {
+    "title": "Build Intent Classifier 27",
+    "diff": "Medium",
+    "topic": "NLP",
+    "company": "AI Startup"
+  },
+  {
+    "title": "Fine-tune BERT for Classification 28",
+    "diff": "Hard",
+    "topic": "Transformers",
+    "company": "ML"
+  },
+  {
+    "title": "Implement LoRA Fine-tuning Concept 29",
+    "diff": "Hard",
+    "topic": "LLM",
+    "company": "GenAI"
+  },
+  {
+    "title": "Vector Search Optimization 30",
+    "diff": "Medium",
+    "topic": "Vector DB",
+    "company": "RAG"
+  },
+  {
+    "title": "Implement TF-IDF from Scratch 31",
+    "diff": "Easy",
+    "topic": "NLP",
+    "company": "NLP Interview"
+  },
+  {
+    "title": "Build Intent Classifier 32",
+    "diff": "Medium",
+    "topic": "NLP",
+    "company": "AI Startup"
+  },
+  {
+    "title": "Fine-tune BERT for Classification 33",
+    "diff": "Hard",
+    "topic": "Transformers",
+    "company": "ML"
+  },
+  {
+    "title": "Implement LoRA Fine-tuning Concept 34",
+    "diff": "Hard",
+    "topic": "LLM",
+    "company": "GenAI"
+  },
+  {
+    "title": "Vector Search Optimization 35",
+    "diff": "Medium",
+    "topic": "Vector DB",
+    "company": "RAG"
+  },
+  {
+    "title": "Implement TF-IDF from Scratch 36",
+    "diff": "Easy",
+    "topic": "NLP",
+    "company": "NLP Interview"
+  },
+  {
+    "title": "Build Intent Classifier 37",
+    "diff": "Medium",
+    "topic": "NLP",
+    "company": "AI Startup"
+  },
+  {
+    "title": "Fine-tune BERT for Classification 38",
+    "diff": "Hard",
+    "topic": "Transformers",
+    "company": "ML"
+  },
+  {
+    "title": "Implement LoRA Fine-tuning Concept 39",
+    "diff": "Hard",
+    "topic": "LLM",
+    "company": "GenAI"
+  },
+  {
+    "title": "Vector Search Optimization 40",
+    "diff": "Medium",
+    "topic": "Vector DB",
+    "company": "RAG"
+  },
+  {
+    "title": "Implement TF-IDF from Scratch 41",
+    "diff": "Easy",
+    "topic": "NLP",
+    "company": "NLP Interview"
+  },
+  {
+    "title": "Build Intent Classifier 42",
+    "diff": "Medium",
+    "topic": "NLP",
+    "company": "AI Startup"
+  },
+  {
+    "title": "Fine-tune BERT for Classification 43",
+    "diff": "Hard",
+    "topic": "Transformers",
+    "company": "ML"
+  },
+  {
+    "title": "Implement LoRA Fine-tuning Concept 44",
+    "diff": "Hard",
+    "topic": "LLM",
+    "company": "GenAI"
+  },
+  {
+    "title": "Vector Search Optimization 45",
+    "diff": "Medium",
+    "topic": "Vector DB",
+    "company": "RAG"
+  },
+  {
+    "title": "Implement TF-IDF from Scratch 46",
+    "diff": "Easy",
+    "topic": "NLP",
+    "company": "NLP Interview"
+  },
+  {
+    "title": "Build Intent Classifier 47",
+    "diff": "Medium",
+    "topic": "NLP",
+    "company": "AI Startup"
+  },
+  {
+    "title": "Fine-tune BERT for Classification 48",
+    "diff": "Hard",
+    "topic": "Transformers",
+    "company": "ML"
+  },
+  {
+    "title": "Implement LoRA Fine-tuning Concept 49",
+    "diff": "Hard",
+    "topic": "LLM",
+    "company": "GenAI"
+  },
+  {
+    "title": "Vector Search Optimization 50",
+    "diff": "Medium",
+    "topic": "Vector DB",
+    "company": "RAG"
+  },
+  {
+    "title": "Implement TF-IDF from Scratch 51",
+    "diff": "Easy",
+    "topic": "NLP",
+    "company": "NLP Interview"
+  },
+  {
+    "title": "Build Intent Classifier 52",
+    "diff": "Medium",
+    "topic": "NLP",
+    "company": "AI Startup"
+  },
+  {
+    "title": "Fine-tune BERT for Classification 53",
+    "diff": "Hard",
+    "topic": "Transformers",
+    "company": "ML"
+  },
+  {
+    "title": "Implement LoRA Fine-tuning Concept 54",
+    "diff": "Hard",
+    "topic": "LLM",
+    "company": "GenAI"
+  },
+  {
+    "title": "Vector Search Optimization 55",
+    "diff": "Medium",
+    "topic": "Vector DB",
+    "company": "RAG"
+  },
+  {
+    "title": "Implement TF-IDF from Scratch 56",
+    "diff": "Easy",
+    "topic": "NLP",
+    "company": "NLP Interview"
+  },
+  {
+    "title": "Build Intent Classifier 57",
+    "diff": "Medium",
+    "topic": "NLP",
+    "company": "AI Startup"
+  },
+  {
+    "title": "Fine-tune BERT for Classification 58",
+    "diff": "Hard",
+    "topic": "Transformers",
+    "company": "ML"
+  },
+  {
+    "title": "Implement LoRA Fine-tuning Concept 59",
+    "diff": "Hard",
+    "topic": "LLM",
+    "company": "GenAI"
+  },
+  {
+    "title": "Vector Search Optimization 60",
+    "diff": "Medium",
+    "topic": "Vector DB",
+    "company": "RAG"
+  },
+  {
+    "title": "Implement TF-IDF from Scratch 61",
+    "diff": "Easy",
+    "topic": "NLP",
+    "company": "NLP Interview"
+  },
+  {
+    "title": "Build Intent Classifier 62",
+    "diff": "Medium",
+    "topic": "NLP",
+    "company": "AI Startup"
+  },
+  {
+    "title": "Fine-tune BERT for Classification 63",
+    "diff": "Hard",
+    "topic": "Transformers",
+    "company": "ML"
+  },
+  {
+    "title": "Implement LoRA Fine-tuning Concept 64",
+    "diff": "Hard",
+    "topic": "LLM",
+    "company": "GenAI"
+  },
+  {
+    "title": "Vector Search Optimization 65",
+    "diff": "Medium",
+    "topic": "Vector DB",
+    "company": "RAG"
+  },
+  {
+    "title": "Implement TF-IDF from Scratch 66",
+    "diff": "Easy",
+    "topic": "NLP",
+    "company": "NLP Interview"
+  },
+  {
+    "title": "Build Intent Classifier 67",
+    "diff": "Medium",
+    "topic": "NLP",
+    "company": "AI Startup"
+  },
+  {
+    "title": "Fine-tune BERT for Classification 68",
+    "diff": "Hard",
+    "topic": "Transformers",
+    "company": "ML"
+  },
+  {
+    "title": "Implement LoRA Fine-tuning Concept 69",
+    "diff": "Hard",
+    "topic": "LLM",
+    "company": "GenAI"
+  },
+  {
+    "title": "Vector Search Optimization 70",
+    "diff": "Medium",
+    "topic": "Vector DB",
+    "company": "RAG"
+  },
+  {
+    "title": "Implement TF-IDF from Scratch 71",
+    "diff": "Easy",
+    "topic": "NLP",
+    "company": "NLP Interview"
+  },
+  {
+    "title": "Build Intent Classifier 72",
+    "diff": "Medium",
+    "topic": "NLP",
+    "company": "AI Startup"
+  },
+  {
+    "title": "Fine-tune BERT for Classification 73",
+    "diff": "Hard",
+    "topic": "Transformers",
+    "company": "ML"
+  },
+  {
+    "title": "Implement LoRA Fine-tuning Concept 74",
+    "diff": "Hard",
+    "topic": "LLM",
+    "company": "GenAI"
+  },
+  {
+    "title": "Vector Search Optimization 75",
+    "diff": "Medium",
+    "topic": "Vector DB",
+    "company": "RAG"
+  },
+  {
+    "title": "Implement TF-IDF from Scratch 76",
+    "diff": "Easy",
+    "topic": "NLP",
+    "company": "NLP Interview"
+  },
+  {
+    "title": "Build Intent Classifier 77",
+    "diff": "Medium",
+    "topic": "NLP",
+    "company": "AI Startup"
+  },
+  {
+    "title": "Fine-tune BERT for Classification 78",
+    "diff": "Hard",
+    "topic": "Transformers",
+    "company": "ML"
+  },
+  {
+    "title": "Implement LoRA Fine-tuning Concept 79",
+    "diff": "Hard",
+    "topic": "LLM",
+    "company": "GenAI"
+  },
+  {
+    "title": "Vector Search Optimization 80",
+    "diff": "Medium",
+    "topic": "Vector DB",
+    "company": "RAG"
+  },
+  {
+    "title": "Implement TF-IDF from Scratch 81",
+    "diff": "Easy",
+    "topic": "NLP",
+    "company": "NLP Interview"
+  },
+  {
+    "title": "Build Intent Classifier 82",
+    "diff": "Medium",
+    "topic": "NLP",
+    "company": "AI Startup"
+  },
+  {
+    "title": "Fine-tune BERT for Classification 83",
+    "diff": "Hard",
+    "topic": "Transformers",
+    "company": "ML"
+  },
+  {
+    "title": "Implement LoRA Fine-tuning Concept 84",
+    "diff": "Hard",
+    "topic": "LLM",
+    "company": "GenAI"
+  },
+  {
+    "title": "Vector Search Optimization 85",
+    "diff": "Medium",
+    "topic": "Vector DB",
+    "company": "RAG"
+  },
+  {
+    "title": "Implement TF-IDF from Scratch 86",
+    "diff": "Easy",
+    "topic": "NLP",
+    "company": "NLP Interview"
+  },
+  {
+    "title": "Build Intent Classifier 87",
+    "diff": "Medium",
+    "topic": "NLP",
+    "company": "AI Startup"
+  },
+  {
+    "title": "Fine-tune BERT for Classification 88",
+    "diff": "Hard",
+    "topic": "Transformers",
+    "company": "ML"
+  },
+  {
+    "title": "Implement LoRA Fine-tuning Concept 89",
+    "diff": "Hard",
+    "topic": "LLM",
+    "company": "GenAI"
+  },
+  {
+    "title": "Vector Search Optimization 90",
+    "diff": "Medium",
+    "topic": "Vector DB",
+    "company": "RAG"
+  },
+  {
+    "title": "Implement TF-IDF from Scratch 91",
+    "diff": "Easy",
+    "topic": "NLP",
+    "company": "NLP Interview"
+  },
+  {
+    "title": "Build Intent Classifier 92",
+    "diff": "Medium",
+    "topic": "NLP",
+    "company": "AI Startup"
+  },
+  {
+    "title": "Fine-tune BERT for Classification 93",
+    "diff": "Hard",
+    "topic": "Transformers",
+    "company": "ML"
+  },
+  {
+    "title": "Implement LoRA Fine-tuning Concept 94",
+    "diff": "Hard",
+    "topic": "LLM",
+    "company": "GenAI"
+  },
+  {
+    "title": "Vector Search Optimization 95",
+    "diff": "Medium",
+    "topic": "Vector DB",
+    "company": "RAG"
+  },
+  {
+    "title": "Implement TF-IDF from Scratch 96",
+    "diff": "Easy",
+    "topic": "NLP",
+    "company": "NLP Interview"
+  },
+  {
+    "title": "Build Intent Classifier 97",
+    "diff": "Medium",
+    "topic": "NLP",
+    "company": "AI Startup"
+  },
+  {
+    "title": "Fine-tune BERT for Classification 98",
+    "diff": "Hard",
+    "topic": "Transformers",
+    "company": "ML"
+  },
+  {
+    "title": "Implement LoRA Fine-tuning Concept 99",
+    "diff": "Hard",
+    "topic": "LLM",
+    "company": "GenAI"
+  },
+  {
+    "title": "Vector Search Optimization 100",
+    "diff": "Medium",
+    "topic": "Vector DB",
+    "company": "RAG"
+  }
+]
