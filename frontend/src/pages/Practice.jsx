@@ -2,7 +2,7 @@ import Navbar from '../components/Navbar.jsx';
 import './RoleFullStack.css';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { getQuestions } from '../api/api';
+import { roleData, allQuestions } from '../data/index.js';
 
 export default function Practice(){
   const { stack } = useParams();
@@ -12,13 +12,21 @@ export default function Practice(){
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
-  useEffect(() => {
+ useEffect(() => {
     setLoading(true);
     setError(false);
-    getQuestions(stack || 'python')
-    .then(res => setQuestions(res.data || []))
-    .catch(() => setError(true))
-    .finally(() => setLoading(false));
+    try {
+      // stack ku yetha maadhiri data edukkrom
+      const stackData = roleData[stack] || roleData['python'] || allQuestions;
+      const data = Array.isArray(stackData) ? stackData : allQuestions;
+      // Duplicate remove pannalam
+      const unique = [...new Map(data.map(q => [q.slug || q.title, q])).values()];
+      setQuestions(unique);
+    } catch (e) {
+      setError(true);
+    } finally {
+      setLoading(false);
+    }
   }, [stack]);
 
   const filtered = questions.filter(q =>
