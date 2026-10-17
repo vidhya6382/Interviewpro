@@ -21,7 +21,6 @@ export default function Solve() {
   const loadQuestion = async () => {
     setQuestion(null);
     setNotFound(false);
-    // 1. First try backend
     try {
       const res = await getQuestion(id);
       setQuestion(res.data);
@@ -31,7 +30,6 @@ export default function Solve() {
       console.log("Backend not found, trying local JSON...");
     }
 
-    // 2. Fallback to local JSON - Title vechu search
     try {
       const decoded = decodeURIComponent(id || "");
       let q = allQuestions.find(x => x.title === decoded) ||
@@ -59,30 +57,16 @@ export default function Solve() {
         language_id: 71,
       });
       setResult(res.data);
-      if (res.data.status !== "Correct") {
-        // No alert - show in result box only
-        console.log(res.data.reason);
-      }
     } catch (err) {
-      // Backend fail na local verification
-      const hasLogic = code.includes("fillna") || code.includes("dropna") || code.includes("return");
-      if (hasLogic && code.length > 20) {
-        setResult({
-          status: "Correct",
-          score: 10,
-          reason: "Solution submitted successfully!",
-          logic_error: "",
-          ai_hint: "Local verification: Code structure looks good."
-        });
-      } else {
-        setResult({
-          status: "Wrong Answer",
-          score: 0,
-          reason: "Please implement solve() with proper null handling",
-          logic_error: "Missing fillna/dropna or return statement",
-          ai_hint: "Use df.fillna() or df.dropna()"
-        });
-      }
+      // NO MORE FAKE CORRECT - Show real backend error
+      const errorMsg = err.response?.data?.reason || err.response?.data?.logic_error || err.message;
+      setResult({
+        status: "Runtime Error",
+        score: 0,
+        reason: "Backend not reachable. Please check api/index.py deployment.",
+        logic_error: errorMsg,
+        ai_hint: "Make sure /api/submit/ returns real pandas test, not local check"
+      });
     }
     setLoading(false);
   };

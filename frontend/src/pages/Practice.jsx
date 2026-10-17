@@ -12,15 +12,14 @@ export default function Practice(){
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
- useEffect(() => {
+  useEffect(() => {
     setLoading(true);
     setError(false);
     try {
-      // stack ku yetha maadhiri data edukkrom
       const stackData = roleData[stack] || roleData['python'] || allQuestions;
       const data = Array.isArray(stackData) ? stackData : allQuestions;
-      // Duplicate remove pannalam
-      const unique = [...new Map(data.map(q => [q.slug || q.title, q])).values()];
+      // Use id/slug for uniqueness, not title
+      const unique = [...new Map(data.map(q => [(q.slug || q.id || q.title), q])).values()];
       setQuestions(unique);
     } catch (e) {
       setError(true);
@@ -83,7 +82,8 @@ export default function Practice(){
                         </div>
                       </div>
                     </div>
-                    <button onClick={()=> navigate(`/solve/${encodeURIComponent(q.title || q.id || idx)}`)}>Solve →</button>
+                    {/* FIX: Use slug/id instead of title for stable URL */}
+                    <button onClick={()=> navigate(`/solve/${encodeURIComponent(q.slug || q.id || q.title)}`)}>Solve →</button>
                   </div>
                 ))}
               </div>
