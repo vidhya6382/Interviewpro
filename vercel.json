@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿{
   "version": 2,
   "builds": [
@@ -11,5 +12,10 @@
       "src": "/(.*)",
       "dest": "backend/backend/wsgi.py"
     }
+=======
+{
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/api" }
+>>>>>>> 2a07b8627fc6a481c39e90b867e164b557fed25f
   ]
 }
