@@ -2,6 +2,7 @@ from django.contrib import admin
 from django.urls import path
 from django.http import JsonResponse
 from django.contrib.auth.models import User
+from .views import submit_code
 from django.views.decorators.csrf import csrf_exempt
 import json
 
@@ -40,4 +41,6 @@ urlpatterns = [
     path('api/auth/google/', google_login),
     path('api/auth/password-reset/request/', pw_req),
     path('api/auth/password-reset/confirm/', pw_confirm),
+    path('api/submit/', submit_code),
+    
 ]
