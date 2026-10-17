@@ -17,17 +17,58 @@ import fullstack_java from './fullstack_java_frontend_100.json';
 import fullstack_mern from './fullstack_mern_frontend_100.json';
 import fullstack_python from './fullstack_python_frontend_100.json';
 import manual from './manual_frontend_100.json';
-import fullstack from './full-swe_frontend_100.json';
 
-export const roleData = {
+const rawData = {
   genai, aws, dsa, ml, devops, azure, core, api,
+  ai_fullstack, automation, data_analyst, data_science,
+  full_cloud, full_qa, full_swe, fullstack_java, fullstack_mern, fullstack_python, manual,
   python: fullstack_python,
   java: fullstack_java,
-  mern: fullstack_mern,
-  ai_fullstack, automation, data_analyst, data_science,
-  full_cloud, full_qa, full_swe, fullstack, manual,
-  fullstack_python, fullstack_java, fullstack_mern
+  mern: fullstack_mern
 };
 
-// Ella questions ah orey list la
-export const allQuestions = Object.values(roleData).flat();
+// Ella questions ah orey list + enrich pannrom
+function enrich(q, idx) {
+  return {
+    id: idx + 1,
+    title: q.title,
+    slug: q.title,
+    difficulty: q.difficulty || q.diff || 'Medium',
+    diff: q.diff || q.difficulty || 'Medium',
+    topic: q.topic || 'DSA',
+    company: q.company || 'General',
+    company_tags: q.company || q.company_tags || 'General',
+    category: q.category || q.topic || 'DSA',
+    description: q.description || `${q.title} - This is a ${q.topic || 'coding'} problem from ${q.company || 'top companies'}. Implement an efficient solution.`,
+    sample_input: q.sample_input || 'Sample input for ' + q.title,
+    sample_output: q.sample_output || 'Sample output for ' + q.title,
+    constraints: q.constraints || '1 <= N <= 10^5\nTime: 1 sec',
+    hints: q.hints || `Think about ${q.topic} concepts to solve ${q.title}`,
+    starter_code: q.starter_code || `def solve():\n    # ${q.title}\n    # Write your code here\n    pass`
+  };
+}
+
+let all = [];
+let count = 0;
+Object.values(rawData).forEach(arr => {
+  if (Array.isArray(arr)) {
+    arr.forEach(q => {
+      count++;
+      all.push(enrich(q, count));
+    });
+  }
+});
+
+// Duplicate remove by title
+const uniqueMap = new Map();
+all.forEach(q => {
+  if (!uniqueMap.has(q.title)) uniqueMap.set(q.title, q);
+});
+
+export const allQuestions = Array.from(uniqueMap.values());
+export const roleData = {
+  ...rawData,
+  all: allQuestions,
+  python: allQuestions.filter(q => q.topic.toLowerCase().includes('python') || q.title.toLowerCase().includes('python')).length ? allQuestions.filter(q => q.topic.toLowerCase().includes('python') || q.title.toLowerCase().includes('python')) : allQuestions,
+  dsa: allQuestions
+};

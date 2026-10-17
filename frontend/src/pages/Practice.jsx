@@ -83,7 +83,7 @@ export default function Practice(){
                         </div>
                       </div>
                     </div>
-                    <button className="pro-solve" onClick={()=> navigate(`/solve/${q.slug}`)}>Solve →</button>
+                    <button onClick={()=> navigate(`/solve/${encodeURIComponent(q.title || q.id || idx)}`)}>Solve →</button>
                   </div>
                 ))}
               </div>
