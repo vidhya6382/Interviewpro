@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BACKEND_URL = "https://interviewpro-w38o-9jz20lm0r-vidhyas-projects-b8042b5b.vercel.app";
+const BACKEND_URL = "https://INGA-UNGA-DOMAIN.vercel.app";
 
 const API = axios.create({
   baseURL: BACKEND_URL,
@@ -11,7 +11,7 @@ export const getQuestions = async () => ({ data: [] });
 export const getQuestion = async () => { throw new Error("local"); };
 
 export const submitCode = async (data) => {
-  const res = await API.post("/api/submit/", data);
+  const res = await API.post("/api/submit", data);
   return res;
 };
 

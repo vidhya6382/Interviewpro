@@ -4,6 +4,16 @@ import { getQuestion, submitCode } from "../api/api";
 import { allQuestions } from "../data/index.js";
 import "./Solve.css";
 
+const STARTERS = {
+  "two sum": "def two_sum(nums, target):\n    # Write your code here\n    pass",
+  "valid parentheses": "def is_valid(s):\n    # Write your code here\n    pass",
+};
+
+const getStarter = (q) =>
+  q.starter_code ||
+  STARTERS[(q.title || "").toLowerCase()] ||
+  "# Write your code here\n";
+
 export default function Solve() {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -21,10 +31,11 @@ export default function Solve() {
   const loadQuestion = async () => {
     setQuestion(null);
     setNotFound(false);
+    setResult(null);
     try {
       const res = await getQuestion(id);
       setQuestion(res.data);
-      setCode(res.data.starter_code || `def solve():\n    # Write your code here\n    pass`);
+      setCode(getStarter(res.data));
       return;
     } catch (err) {
       console.log("Backend not found, trying local JSON...");
@@ -32,13 +43,14 @@ export default function Solve() {
 
     try {
       const decoded = decodeURIComponent(id || "");
-      let q = allQuestions.find(x => x.title === decoded) ||
-              allQuestions.find(x => x.title.toLowerCase() === decoded.toLowerCase()) ||
-              allQuestions.find(x => String(x.id) === decoded);
-      
+      const q =
+        allQuestions.find((x) => x.title === decoded) ||
+        allQuestions.find((x) => (x.title || "").toLowerCase() === decoded.toLowerCase()) ||
+        allQuestions.find((x) => String(x.id) === decoded);
+
       if (q) {
         setQuestion(q);
-        setCode(q.starter_code);
+        setCode(getStarter(q));
       } else {
         setNotFound(true);
       }
@@ -52,24 +64,25 @@ export default function Solve() {
     setResult(null);
     try {
       const res = await submitCode({
-        question_id: id,
+        question_id: question?.title || id,
         code: code,
-        language_id: 71,
       });
       setResult(res.data);
     } catch (err) {
-      // NO MORE FAKE CORRECT - Show real backend error
-      const errorMsg = err.response?.data?.reason || err.response?.data?.logic_error || err.message;
       setResult({
         status: "Runtime Error",
         score: 0,
-        reason: "Backend not reachable. Please check api/index.py deployment.",
-        logic_error: errorMsg,
-        ai_hint: "Make sure /api/submit/ returns real pandas test, not local check"
+        reason: "Backend reach aagala. api.js la BACKEND_URL check pannunga.",
+        logic_error: err.response?.data?.reason || err.message,
       });
     }
     setLoading(false);
   };
+
+  const bg =
+    result?.status === "Correct" ? "#dcfce7"
+    : result?.status === "Not Auto-Gradable" ? "#fef9c3"
+    : "#fee2e2";
 
   if (notFound) {
     return (
@@ -93,7 +106,6 @@ export default function Solve() {
         <div className="q-badges">
           <span className="b easy">{question.difficulty || question.diff}</span>
           <span className="b gray">{question.category || question.topic}</span>
-          <span className="b gray">{question.topic}</span>
         </div>
         <div className="card"><h3>Description</h3><p>{question.description}</p></div>
         <div className="sample-grid">
@@ -102,22 +114,34 @@ export default function Solve() {
         </div>
         <div className="card dark"><h3>Constraints</h3><pre>{question.constraints}</pre></div>
         <div className="hint-box">
-          <div className="hint-head" onClick={() => setHintShow(!hintShow)}><span>💡 Hint</span><span>{hintShow ? "▲" : "▼"}</span></div>
+          <div className="hint-head" onClick={() => setHintShow(!hintShow)}>
+            <span>💡 Hint</span><span>{hintShow ? "▲" : "▼"}</span>
+          </div>
           {hintShow && <p>{question.hints}</p>}
         </div>
         {result && (
-          <div className={`result ${result.status}`} style={{marginTop:'20px', padding:'15px', borderRadius:'8px', background: result.status==='Correct'?'#dcfce7':'#fee2e2', border:'1px solid #ccc'}}>
-            <h3>{result.status === "Correct" ? `✅ Correct (${result.score}/10)` : `❌ ${result.status} (${result.score}/10)`}</h3>
+          <div style={{ marginTop: "20px", padding: "15px", borderRadius: "8px", background: bg, border: "1px solid #ccc" }}>
+            <h3>
+              {result.status === "Correct"
+                ? `✅ Correct (${result.score}/10)`
+                : result.status === "Not Auto-Gradable"
+                ? "ℹ️ Not Auto-Gradable"
+                : `❌ ${result.status} (${result.score}/10)`}
+            </h3>
             <p>{result.reason}</p>
-            <p>{result.logic_error}</p>
-            <p>{result.ai_hint}</p>
+            {result.logic_error && <p>{result.logic_error}</p>}
           </div>
         )}
       </div>
       <div className="solve-right">
-        <div className="editor-top"><h3>💻 Code Editor</h3><button className="reset-btn" onClick={() => setCode(question.starter_code)}>Reset</button></div>
+        <div className="editor-top">
+          <h3>💻 Code Editor</h3>
+          <button className="reset-btn" onClick={() => setCode(getStarter(question))}>Reset</button>
+        </div>
         <textarea className="code-area" value={code} onChange={(e) => setCode(e.target.value)} />
-        <button className="submit-btn" onClick={handleSubmit} disabled={loading}>{loading ? "Checking..." : "Submit Answer"}</button>
+        <button className="submit-btn" onClick={handleSubmit} disabled={loading}>
+          {loading ? "Checking..." : "Submit Answer"}
+        </button>
       </div>
     </div>
   );
