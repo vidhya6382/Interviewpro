@@ -25,7 +25,7 @@ class handler(BaseHTTPRequestHandler):
             import numpy as np
             
             if 'def solve' not in code:
-                result = {"status": "Wrong Answer", "score": 0, "reason": "solve() function not found", "logic_error": "Define def solve():", "ai_hint": "Use def solve():"}
+                result = {"status": "Wrong Answer", "score": 0, "reason": "solve() function not found"}
                 self.wfile.write(json.dumps(result).encode())
                 return
             
@@ -36,15 +36,15 @@ class handler(BaseHTTPRequestHandler):
             df_result = exec_locals.get('result_df') or exec_globals.get('result_df')
             
             if not isinstance(df_result, pd.DataFrame):
-                result = {"status": "Wrong Answer", "score": 0, "reason": "Must return a DataFrame", "logic_error": "return df missing", "ai_hint": "return DataFrame"}
+                result = {"status": "Wrong Answer", "score": 0, "reason": "Must return a DataFrame - You returned " + str(type(df_result))}
             elif int(df_result.isnull().sum().sum()) != 0:
                 nulls = int(df_result.isnull().sum().sum())
-                result = {"status": "Wrong Answer", "score": 0, "reason": f"Still has {nulls} null values", "logic_error": f"{nulls} nulls", "ai_hint": "Use df.fillna() or df.dropna()"}
+                result = {"status": "Wrong Answer", "score": 0, "reason": f"Still has {nulls} null values - Clean all nulls"}
             else:
-                result = {"status": "Correct", "score": 10, "reason": "All test cases passed! 0 null values.", "logic_error": "", "ai_hint": "Great job!"}
+                result = {"status": "Correct", "score": 10, "reason": "All test cases passed! 0 null values."}
         except SyntaxError as e:
-            result = {"status": "Syntax Error", "score": 0, "reason": f"Line {e.lineno}: {e.msg}", "logic_error": str(e), "ai_hint": "Check brackets"}
+            result = {"status": "Syntax Error", "score": 0, "reason": f"Line {e.lineno}: {e.msg}"}
         except Exception as e:
-            result = {"status": "Runtime Error", "score": 0, "reason": f"{type(e).__name__}: {e}", "logic_error": str(e), "ai_hint": "Check logic"}
+            result = {"status": "Runtime Error", "score": 0, "reason": f"{type(e).__name__}: {e}"}
         
         self.wfile.write(json.dumps(result).encode())
