@@ -59,17 +59,21 @@ def check(code, qid):
 
 
 class handler(BaseHTTPRequestHandler):
-    def _send(self, code, body):
+    def _send(self, code, body, ctype="application/json; charset=utf-8"):
         self.send_response(code)
-        self.send_header("Content-Type", "application/json")
+        self.send_header("Content-Type", ctype)
         self.send_header("Access-Control-Allow-Origin", "*")
-        self.send_header("Access-Control-Allow-Methods", "POST, OPTIONS")
+        self.send_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
         self.send_header("Access-Control-Allow-Headers", "Content-Type")
         self.end_headers()
-        self.wfile.write(body.encode())
+        self.wfile.write(body.encode("utf-8"))
 
     def do_OPTIONS(self):
         self._send(204, "")
+
+    def do_GET(self):
+        self._send(200, "<h1>InterviewPro API v2 (test-case checker) Running</h1>",
+                   "text/html; charset=utf-8")
 
     def do_POST(self):
         try:
