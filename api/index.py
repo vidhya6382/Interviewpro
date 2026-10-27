@@ -1,79 +1,52 @@
-import os
-import sys
+from http.server import BaseHTTPRequestHandler
 import json
-import traceback
-from pathlib import Path
 
-# For Vercel
-BASE_DIR = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(BASE_DIR / "backend"))
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'myproject.settings')
+class handler(BaseHTTPRequestHandler):
+    def do_GET(self):
+        self.send_response(200)
+        self.send_header('Content-type', 'text/html')
+        self.send_header('Access-Control-Allow-Origin', '*')
+        self.end_headers()
+        html = """
+        <html><body>
+        <h1>InterviewPro API Running ✅</h1>
+        <p>Use /api/submit for code verification</p>
+        <p>Frontend: <a href='/'>Go to App</a></p>
+        </body></html>
+        """
+        self.wfile.write(html.encode())
 
-# --- 1. DIRECT VERIFICATION API (No Django needed) ---
-def handle_submit(request_body):
-    try:
-        data = json.loads(request_body) if isinstance(request_body, (str, bytes)) else request_body
-        code = data.get('code', '')
-
-        if 'def solve' not in code or 'return' not in code:
-            return {"status": "Wrong Answer", "score": 0, "reason": "solve() must be defined and return DataFrame"}
-
-        import pandas as pd
-        import numpy as np
-
-        test_code = code + """
-
-try:
-    df_result = solve()
-    assert isinstance(df_result, pd.DataFrame), "Must return DataFrame"
-    nulls = int(df_result.isnull().sum().sum())
-    assert nulls == 0, f"Still has {nulls} null values"
-except Exception as e:
-    raise e
-"""
-        exec_globals = {"pd": pd, "np": np, "pandas": pd, "numpy": np}
-        exec(test_code, exec_globals, {})
-
-        return {"status": "Correct", "score": 10, "reason": "All test cases passed! 0 null values."}
-
-    except AssertionError as e:
-        return {"status": "Wrong Answer", "score": 0, "reason": str(e), "logic_error": str(e)}
-    except SyntaxError as e:
-        return {"status": "Syntax Error", "score": 0, "reason": f"Line {e.lineno}: {e.msg}"}
-    except Exception as e:
-        return {"status": "Runtime Error", "score": 0, "reason": f"{type(e).__name__}: {e}"}
-
-# --- 2. VERCEL HANDLER ---
-class Handler:
-    def __init__(self, *args, **kwargs):
-        pass
-
-    def __call__(self, environ, start_response):
-        from io import BytesIO
-        path = environ.get('PATH_INFO', '')
-        method = environ.get('REQUEST_METHOD', 'GET')
-        
-        # If it's submit API, handle here directly!
-        if '/api/submit' in path and method == 'POST':
+    def do_POST(self):
+        # Handle submit here too as backup
+        if '/api/submit' in self.path or '/submit' in self.path:
+            content_length = int(self.headers.get('Content-Length', 0))
+            body = self.rfile.read(content_length).decode('utf-8')
             try:
-                content_length = int(environ.get('CONTENT_LENGTH', 0))
-                body = environ['wsgi.input'].read(content_length).decode('utf-8')
-                result = handle_submit(body)
+                import pandas as pd
+                data = json.loads(body)
+                code = data.get('code', '')
                 
-                start_response('200 OK', [('Content-Type', 'application/json'), ('Access-Control-Allow-Origin', '*')])
-                return [json.dumps(result).encode('utf-8')]
+                if 'def solve' not in code:
+                    result = {"status": "Wrong Answer", "score": 0, "reason": "solve() not found"}
+                else:
+                    exec_code = code + "\nresult_df = solve()\n"
+                    g = {"pd": pd, "pandas": pd}
+                    l = {}
+                    exec(exec_code, g, l)
+                    df = l.get('result_df') or g.get('result_df')
+                    if not isinstance(df, pd.DataFrame):
+                        result = {"status": "Wrong Answer", "score": 0, "reason": "Must return DataFrame"}
+                    elif int(df.isnull().sum().sum()) != 0:
+                        result = {"status": "Wrong Answer", "score": 0, "reason": f"Still has {int(df.isnull().sum().sum())} nulls"}
+                    else:
+                        result = {"status": "Correct", "score": 10, "reason": "All test cases passed!"}
             except Exception as e:
-                start_response('500 Internal Server Error', [('Content-Type', 'application/json')])
-                return [json.dumps({"status": "Runtime Error", "reason": str(e)}).encode('utf-8')]
-        
-        # For all other routes, use Django
-        try:
-            from django.core.wsgi import get_wsgi_application
-            application = get_wsgi_application()
-            return application(environ, start_response)
-        except Exception as e:
-            start_response('500 Internal Server Error', [('Content-Type', 'text/plain')])
-            return [f"Django Error: {e}\n{traceback.format_exc()}".encode('utf-8')]
-
-app = Handler()
-application = app
+                result = {"status": "Runtime Error", "score": 0, "reason": str(e)}
+            
+            self.send_response(200)
+            self.send_header('Content-type', 'application/json')
+            self.send_header('Access-Control-Allow-Origin', '*')
+            self.end_headers()
+            self.wfile.write(json.dumps(result).encode())
+        else:
+            self.do_GET()
