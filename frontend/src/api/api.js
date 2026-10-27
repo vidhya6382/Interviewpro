@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BACKEND_URL = "https://INGA-UNGA-DOMAIN.vercel.app";
+const BACKEND_URL = "https://interviewpro-w38o.vercel.app";
 
 const API = axios.create({
   baseURL: BACKEND_URL,
