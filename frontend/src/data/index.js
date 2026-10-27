@@ -17,27 +17,35 @@ import fullstack_java from './fullstack_java_frontend_100.json';
 import fullstack_mern from './fullstack_mern_frontend_100.json';
 import fullstack_python from './fullstack_python_frontend_100.json';
 import manual from './manual_frontend_100.json';
+import mbppAll from './mbpp_questions.json';
+
+// 972 questions romba perusu na, number kammi pannunga (e.g. 200). Ellam venum na mbppAll.length
+const MBPP_LIMIT = 200;
+const mbpp = mbppAll.slice(0, MBPP_LIMIT);
 
 const rawData = {
   genai, aws, dsa, ml, devops, azure, core, api,
   ai_fullstack, automation, data_analyst, data_science,
   full_cloud, full_qa, full_swe, fullstack_java, fullstack_mern, fullstack_python, manual,
+  mbpp,
   python: fullstack_python,
   java: fullstack_java,
   mern: fullstack_mern
 };
 
-// Ella questions ah orey list + enrich pannrom
+const isMbpp = (q) => String(q.id || '').startsWith('mbpp-');
+
 function enrich(q, idx) {
+  const mb = isMbpp(q);
   return {
-    id: idx + 1,
+    id: mb ? q.id : idx + 1,
     title: q.title,
-    slug: q.title,
+    slug: mb ? q.id : q.title,
     difficulty: q.difficulty || q.diff || 'Medium',
     diff: q.diff || q.difficulty || 'Medium',
     topic: q.topic || 'DSA',
     company: q.company || 'General',
-    company_tags: q.company || q.company_tags || 'General',
+    company_tags: q.company_tags || q.company || 'General',
     category: q.category || q.topic || 'DSA',
     description: q.description || `${q.title} - This is a ${q.topic || 'coding'} problem from ${q.company || 'top companies'}. Implement an efficient solution.`,
     sample_input: q.sample_input || 'Sample input for ' + q.title,
@@ -50,7 +58,8 @@ function enrich(q, idx) {
 
 let all = [];
 let count = 0;
-Object.values(rawData).forEach(arr => {
+Object.entries(rawData).forEach(([key, arr]) => {
+  if (key === 'python' || key === 'java' || key === 'mern') return; // alias, double count aagaama
   if (Array.isArray(arr)) {
     arr.forEach(q => {
       count++;
@@ -59,16 +68,24 @@ Object.values(rawData).forEach(arr => {
   }
 });
 
-// Duplicate remove by title
+// Duplicate remove: "Build Intent Classifier 17" maari number serththa fake copies um remove
 const uniqueMap = new Map();
 all.forEach(q => {
-  if (!uniqueMap.has(q.title)) uniqueMap.set(q.title, q);
+  const key = isMbpp(q) ? q.id : q.title.replace(/\s\d+$/, '');
+  if (!uniqueMap.has(key)) uniqueMap.set(key, q);
 });
 
 export const allQuestions = Array.from(uniqueMap.values());
+
+const mbppList = allQuestions.filter(isMbpp);
+const pythonList = allQuestions.filter(
+  q => isMbpp(q) || (q.topic || '').toLowerCase().includes('python') || q.title.toLowerCase().includes('python') || q.title.toLowerCase().includes('pandas')
+);
+
 export const roleData = {
   ...rawData,
   all: allQuestions,
-  python: allQuestions.filter(q => q.topic.toLowerCase().includes('python') || q.title.toLowerCase().includes('python')).length ? allQuestions.filter(q => q.topic.toLowerCase().includes('python') || q.title.toLowerCase().includes('python')) : allQuestions,
+  mbpp: mbppList,
+  python: pythonList.length ? pythonList : allQuestions,
   dsa: allQuestions
 };
