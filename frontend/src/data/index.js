@@ -19,7 +19,7 @@ import fullstack_python from './fullstack_python_frontend_100.json';
 import manual from './manual_frontend_100.json';
 import mbppAll from './mbpp_questions.json';
 
-// 972 questions romba perusu na, number kammi pannunga (e.g. 200). Ellam venum na mbppAll.length
+// 972 romba perusu na, number kammi pannunga (e.g. 200)
 const MBPP_LIMIT = 200;
 const mbpp = mbppAll.slice(0, MBPP_LIMIT);
 
@@ -59,7 +59,7 @@ function enrich(q, idx) {
 let all = [];
 let count = 0;
 Object.entries(rawData).forEach(([key, arr]) => {
-  if (key === 'python' || key === 'java' || key === 'mern') return; // alias, double count aagaama
+  if (key === 'python' || key === 'java' || key === 'mern') return;
   if (Array.isArray(arr)) {
     arr.forEach(q => {
       count++;
@@ -68,7 +68,7 @@ Object.entries(rawData).forEach(([key, arr]) => {
   }
 });
 
-// Duplicate remove: "Build Intent Classifier 17" maari number serththa fake copies um remove
+// Fake duplicates ("Intent Classifier 17") remove
 const uniqueMap = new Map();
 all.forEach(q => {
   const key = isMbpp(q) ? q.id : q.title.replace(/\s\d+$/, '');

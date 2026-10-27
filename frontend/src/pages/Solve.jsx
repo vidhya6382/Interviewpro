@@ -63,11 +63,11 @@ export default function Solve() {
     setLoading(true);
     setResult(null);
     try {
-          const res = await submitCode({
-        question_id: question?.title || id,
-        mbpp_id: question?.id,
-        code: code,
-      });
+        const res = await submitCode({
+  question_id: question?.title || id,
+  mbpp_id: question?.id,
+  code: code,
+});
       setResult(res.data);
     } catch (err) {
       setResult({
