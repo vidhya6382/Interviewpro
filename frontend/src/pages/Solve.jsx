@@ -73,7 +73,7 @@ export default function Solve() {
       setResult({
         status: "Runtime Error",
         score: 0,
-        reason: "Backend reach aagala. api.js la BACKEND_URL check pannunga.",
+        reason: "Unable to reach the evaluation server. Please check your connection and try again.",
         logic_error: err.response?.data?.reason || err.message,
       });
     }

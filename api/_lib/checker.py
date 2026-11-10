@@ -46,16 +46,16 @@ def _check_hand(code, t):
         fn = ns.get(t["func"])
         if not callable(fn):
             return {"status": "Wrong Answer", "score": 0,
-                    "reason": t["func"] + "() function define pannala"}
+                    "reason": "Function `" + t["func"] + "()` is not defined. Define it exactly as named in the problem."}
         for i, (args, expected) in enumerate(t["cases"], 1):
             got = fn(*args)
             if not _same(got, expected):
                 return {"status": "Wrong Answer", "score": 0,
-                        "reason": f"Test case {i} fail. Input: {args}, Expected: {expected}, Got: {got}"}
+                        "reason": f"Test case {i} failed. Input: {args} | Expected: {expected} | Got: {got}"}
         n = len(t["cases"])
         return {"status": "Correct", "score": 10, "reason": f"{n}/{n} test cases passed"}
     except SyntaxError as e:
-        return {"status": "Syntax Error", "score": 0, "reason": f"Line {e.lineno}: {e.msg}"}
+        return {"status": "Syntax Error", "score": 0, "reason": f"Syntax error on line {e.lineno}: {e.msg}"}
     except Exception as e:
         return {"status": "Runtime Error", "score": 0, "reason": f"{type(e).__name__}: {e}"}
 
@@ -92,29 +92,29 @@ def _check_pandas(code, make_input, make_expected):
         import numpy as np
     except Exception:
         return {"status": "Error", "score": 0,
-                "reason": "Server la pandas install aagala. requirements.txt check pannunga."}
+                "reason": "The pandas library is not available on the server."}
     try:
         ns = {"pd": pd, "np": np}
         exec(code, ns)
         fn = ns.get("solve")
         if not callable(fn):
             return {"status": "Wrong Answer", "score": 0,
-                    "reason": "solve(df) function define pannala"}
+                    "reason": "Function `solve(df)` is not defined."}
         result = fn(make_input())
         if not isinstance(result, pd.DataFrame):
             return {"status": "Wrong Answer", "score": 0,
-                    "reason": "solve(df) DataFrame return pannanum"}
+                    "reason": "`solve(df)` must return a pandas DataFrame."}
         pd.testing.assert_frame_equal(
             result.reset_index(drop=True),
             make_expected(),
             check_dtype=False,
         )
         return {"status": "Correct", "score": 10,
-                "reason": "Output expected output oda match aaguthu"}
+                "reason": "Your output matches the expected result."}
     except AssertionError as e:
         return {"status": "Wrong Answer", "score": 0, "reason": str(e)[:300]}
     except SyntaxError as e:
-        return {"status": "Syntax Error", "score": 0, "reason": f"Line {e.lineno}: {e.msg}"}
+        return {"status": "Syntax Error", "score": 0, "reason": f"Syntax error on line {e.lineno}: {e.msg}"}
     except Exception as e:
         return {"status": "Runtime Error", "score": 0, "reason": f"{type(e).__name__}: {e}"}
 
@@ -128,7 +128,7 @@ try:
     exec(src["setup"], ns)
     exec(src["code"], ns)
 except SyntaxError as e:
-    print(json.dumps({"status": "Syntax Error", "reason": "Line %s: %s" % (e.lineno, e.msg)}))
+    print(json.dumps({"status": "Syntax Error", "reason": "Syntax error on line %s: %s" % (e.lineno, e.msg)}))
     sys.exit(0)
 except Exception as e:
     print(json.dumps({"status": "Runtime Error", "reason": type(e).__name__ + ": " + str(e)}))
@@ -140,7 +140,7 @@ for i, t in enumerate(src["tests"], 1):
         passed += 1
     except AssertionError:
         print(json.dumps({"status": "Wrong Answer", "passed": passed, "total": len(src["tests"]),
-                          "reason": "Test case %d fail: %s" % (i, t.replace("assert ", "", 1))}))
+                          "reason": "Test case %d failed: %s" % (i, t.replace("assert ", "", 1))}))
         sys.exit(0)
     except Exception as e:
         print(json.dumps({"status": "Runtime Error", "passed": passed, "total": len(src["tests"]),
@@ -154,7 +154,7 @@ def _check_mbpp(code, q):
     import json
     if q["func"] not in code:
         return {"status": "Wrong Answer", "score": 0,
-                "reason": q["func"] + "() function define pannala"}
+                "reason": "Function `" + q["func"] + "()` is not defined. Define it exactly as named in the problem."}
     tmp = tempfile.mkdtemp()
     data_path = os.path.join(tmp, "data.json")
     run_path = os.path.join(tmp, "run.py")
@@ -168,7 +168,7 @@ def _check_mbpp(code, q):
         last = (p.stdout.strip().splitlines() or [""])[-1]
         res = json.loads(last)
     except subprocess.TimeoutExpired:
-        return {"status": "Time Limit Exceeded", "score": 0, "reason": "Code 5 second kulla mudiyala (infinite loop?)"}
+        return {"status": "Time Limit Exceeded", "score": 0, "reason": "Execution exceeded the 5-second limit. Check for an infinite loop or an inefficient algorithm."}
     except Exception:
         return {"status": "Runtime Error", "score": 0, "reason": (p.stderr or "Unknown error")[-300:]}
     finally:
@@ -203,4 +203,4 @@ def check(code, qid, mbpp_id=None):
         return _check_hand(code, t)
 
     return {"status": "Not Auto-Gradable", "score": 0,
-            "reason": "Indha question ku auto test case illa. Self-review pannunga."}
+            "reason": "Automated test cases are not available for this question yet."}
