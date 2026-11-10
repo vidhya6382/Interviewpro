@@ -19,8 +19,7 @@ import fullstack_python from './fullstack_python_frontend_100.json';
 import manual from './manual_frontend_100.json';
 import mbppAll from './mbpp_questions.json';
 
-// 972 romba perusu na, number kammi pannunga (e.g. 200)
-const MBPP_LIMIT = 200;
+const MBPP_LIMIT = mbppAll.length;
 const mbpp = mbppAll.slice(0, MBPP_LIMIT);
 
 const rawData = {
@@ -75,7 +74,10 @@ all.forEach(q => {
   if (!uniqueMap.has(key)) uniqueMap.set(key, q);
 });
 
-export const allQuestions = Array.from(uniqueMap.values());
+const GRADABLE = ['two sum', 'valid parentheses', 'pandas - data cleaning task'];
+export const allQuestions = Array.from(uniqueMap.values()).filter(
+  q => isMbpp(q) || GRADABLE.includes(q.title.toLowerCase())
+);
 
 const mbppList = allQuestions.filter(isMbpp);
 const pythonList = allQuestions.filter(

@@ -60,6 +60,65 @@ def _check_hand(code, t):
         return {"status": "Runtime Error", "score": 0, "reason": f"{type(e).__name__}: {e}"}
 
 
+
+# ---------- Pandas tests (pandas import only when needed) ----------
+def _clean_input():
+    import pandas as pd
+    import numpy as np
+    return pd.DataFrame({
+        "name": ["Arun", "Bala", "Chitra", "Bala", "Divya"],
+        "age": [25, np.nan, 30, np.nan, 35],
+        "city": ["Chennai", "Madurai", None, "Madurai", "Salem"],
+    })
+
+
+def _clean_expected():
+    import pandas as pd
+    return pd.DataFrame({
+        "name": ["Arun", "Bala", "Chitra", "Divya"],
+        "age": [25.0, 30.0, 30.0, 35.0],
+        "city": ["Chennai", "Madurai", "Unknown", "Salem"],
+    })
+
+
+PANDAS_TESTS = {
+    "pandas-data-cleaning-task": (_clean_input, _clean_expected),
+}
+
+
+def _check_pandas(code, make_input, make_expected):
+    try:
+        import pandas as pd
+        import numpy as np
+    except Exception:
+        return {"status": "Error", "score": 0,
+                "reason": "Server la pandas install aagala. requirements.txt check pannunga."}
+    try:
+        ns = {"pd": pd, "np": np}
+        exec(code, ns)
+        fn = ns.get("solve")
+        if not callable(fn):
+            return {"status": "Wrong Answer", "score": 0,
+                    "reason": "solve(df) function define pannala"}
+        result = fn(make_input())
+        if not isinstance(result, pd.DataFrame):
+            return {"status": "Wrong Answer", "score": 0,
+                    "reason": "solve(df) DataFrame return pannanum"}
+        pd.testing.assert_frame_equal(
+            result.reset_index(drop=True),
+            make_expected(),
+            check_dtype=False,
+        )
+        return {"status": "Correct", "score": 10,
+                "reason": "Output expected output oda match aaguthu"}
+    except AssertionError as e:
+        return {"status": "Wrong Answer", "score": 0, "reason": str(e)[:300]}
+    except SyntaxError as e:
+        return {"status": "Syntax Error", "score": 0, "reason": f"Line {e.lineno}: {e.msg}"}
+    except Exception as e:
+        return {"status": "Runtime Error", "score": 0, "reason": f"{type(e).__name__}: {e}"}
+
+
 # ---------- MBPP tests (run in a separate process with a timeout) ----------
 RUNNER = r'''
 import sys, json, traceback
@@ -134,7 +193,12 @@ def check(code, qid, mbpp_id=None):
         if key and str(key) in MBPP:
             return _check_mbpp(code, MBPP[str(key)])
 
-    t = TESTS.get(normalize(qid))
+    key = normalize(qid)
+    if key in PANDAS_TESTS:
+        make_input, make_expected = PANDAS_TESTS[key]
+        return _check_pandas(code, make_input, make_expected)
+
+    t = TESTS.get(key)
     if t is not None:
         return _check_hand(code, t)
 
